@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.scss'
-import { Header } from './components/Header/Header'
-import { Sidebar } from './components/Sidebar/Sidebat'
+import { Header } from './components/header/Header'
+import { Sidebar } from './components/sidebar/Sidebar'
 
 function App() {
   return (
