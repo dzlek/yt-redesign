@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm run dev`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -29,6 +29,10 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run lint`
+
+Syntax refers to the set of rules that define how code should be written and structured. Running npm run lint helps ensure that your JavaScript or React code adheres to consistent and correct syntax. This process detects syntax errors, potential bugs, or violations of coding standards, making your code easier to read and maintain.
+
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
@@ -44,3 +48,6 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Figma
+[link](https://www.figma.com/design/4xKSBToBjcKJqIZwLfbl6c/YouTube-Redesign-Concept--Copy-?node-id=0-1&p=f&t=FBmfLDwMd13w2VR3-0)
