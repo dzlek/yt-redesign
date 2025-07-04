@@ -2,8 +2,20 @@
 
 html[data-theme='light'] {
   --background-color: #{$background-color};
+
+  --text-primary: #{$text-primary};
+  --text-secondary: #{$text-secondary};
+
+  --btn-background: #{$btn-background};
+  --btn-primary-text: #{$btn-primary-text};
 }
 
 html[data-theme='dark'] {
   --background-color: #{$background-color-dark};
+
+  --text-primary: #{$text-primary-dark};
+  --text-secondary: #{$text-secondary-dark};
+
+  --btn-background: #{$btn-background-dark};
+  --btn-primary-text: #{$btn-background-dark};
 }

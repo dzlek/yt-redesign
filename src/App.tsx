@@ -18,7 +18,9 @@ function App() {
         <aside>
           <Sidebar />
         </aside>
-        <main>Main</main>
+        <main>
+          <div className="textExample">Main</div>
+        </main>
       </div>
       <button onClick={toggleTheme}>ThemeToggle</button>
     </div>
