@@ -1,12 +1,12 @@
 import React, { createContext, useState } from 'react'
 
 interface ContextProps {
-  darkTheme: boolean
+  lightTheme: boolean
   toggleTheme: () => void
 }
 
 export const ThemeContext = createContext<ContextProps>({
-  darkTheme: true,
+  lightTheme: true,
   toggleTheme: () => {},
 })
 
@@ -15,16 +15,16 @@ interface Props {
 }
 
 const ThemeProvider: React.FC<Props> = ({ children }) => {
-  const [darkTheme, setDarkTheme] = useState(true)
+  const [isLightTheme, setLightTheme] = useState(true)
 
   const toggleThemeHandler = () => {
-    setDarkTheme((prevState) => !prevState)
+    setLightTheme((prevState) => !prevState)
   }
 
   return (
     <ThemeContext.Provider
       value={{
-        darkTheme: darkTheme,
+        lightTheme: isLightTheme,
         toggleTheme: toggleThemeHandler,
       }}
     >

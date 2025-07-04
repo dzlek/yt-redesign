@@ -5,11 +5,11 @@ import { Sidebar } from './components/sidebar/Sidebar'
 import { ThemeContext } from './context/ThemeContext'
 
 function App() {
-  const { darkTheme, toggleTheme } = useContext(ThemeContext)
+  const { lightTheme, toggleTheme } = useContext(ThemeContext)
 
   useEffect(() => {
-    document.documentElement.setAttribute('data-theme', darkTheme ? 'light' : 'dark')
-  }, [darkTheme])
+    document.documentElement.setAttribute('data-theme', lightTheme ? 'light' : 'dark')
+  }, [lightTheme])
 
   return (
     <div className="app">
