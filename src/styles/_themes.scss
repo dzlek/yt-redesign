@@ -1,0 +1,9 @@
+@use 'colors' as *;
+
+html[data-theme='light'] {
+  --background-color: #{$background-color};
+}
+
+html[data-theme='dark'] {
+  --background-color: #{$background-color-dark};
+}

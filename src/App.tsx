@@ -1,16 +1,26 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import './App.scss'
 import { Header } from './components/header/Header'
 import { Sidebar } from './components/sidebar/Sidebar'
+import { ThemeContext } from './context/ThemeContext'
 
 function App() {
+  const { darkTheme, toggleTheme } = useContext(ThemeContext)
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', darkTheme ? 'light' : 'dark')
+  }, [darkTheme])
+
   return (
     <div className="app">
       <Header />
       <div className="app-container">
-        <Sidebar />
+        <aside>
+          <Sidebar />
+        </aside>
         <main>Main</main>
       </div>
+      <button onClick={toggleTheme}>ThemeToggle</button>
     </div>
   )
 }
