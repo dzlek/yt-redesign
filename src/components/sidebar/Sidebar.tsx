@@ -1,7 +1,9 @@
+
+import { Navbar } from '../navbar/Navbar';
+import s from './sidebar.module.scss'
+
 export const Sidebar = () => (
-<ul>
-<li>Sidebar</li>
-<li>Sidebar</li>
-<li>Sidebar</li>
-</ul>
+<div className={s.sidebar}>
+<Navbar/>
+</div>
 );
