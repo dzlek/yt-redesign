@@ -1,0 +1,68 @@
+@use 'fonts' as *;
+@use 'colors' as *;
+@use 'media' as *;
+
+@mixin typography(
+  $font-size,
+  $font-weight,
+  $line-height: $line-height-m,
+  $font-family: $font-family
+) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+.grey {
+  color: $text-primary;
+}
+
+.black {
+  color: $text-secondary;
+}
+
+.white {
+  color: $btn-primary-text;
+}
+
+.red {
+  color: $text-primary-hover;
+}
+
+.h1 {
+  @include typography($font-size-xxxl, $font-weight-bold);
+}
+
+.h2 {
+  @include typography($font-size-xxl, $font-weight-bold);
+}
+
+.h3 {
+  @include typography($font-size-l, $font-weight-bold);
+}
+
+.h4 {
+  @include typography($font-size-m, $font-weight-bold);
+}
+
+.subtitle {
+  @include typography($font-size-xl, $font-weight-regular);
+
+  @media (max-width: $breakpoint-mobile) {
+    @include typography($font-size-s, $font-weight-regular);
+  }
+}
+
+.paragraph {
+  @include typography($font-size-m, $font-weight-regular, $line-height-l);
+  opacity: 0.6;
+}
+
+.navLink {
+  @include typography($font-size-m, $font-weight-regular);
+}
+
+.timeStamp {
+  @include typography($font-size-ssm, $font-weight-regular);
+}

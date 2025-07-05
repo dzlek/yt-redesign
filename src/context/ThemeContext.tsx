@@ -15,23 +15,24 @@ interface Props {
 }
 
 const ThemeProvider: React.FC<Props> = ({ children }) => {
-  const [isLightTheme, setLightTheme] = useState(() =>
-  localStorage.getItem('lightTheme') === 'true' ||
-  (localStorage.getItem('lightTheme') === null &&
-    window.matchMedia('(prefers-color-scheme: light)').matches)
-)
+  const [isLightTheme, setLightTheme] = useState(
+    () =>
+      localStorage.getItem('lightTheme') === 'true' ||
+      (localStorage.getItem('lightTheme') === null &&
+        window.matchMedia('(prefers-color-scheme: light)').matches)
+  )
 
-const toggleThemeHandler = () => {
-  setLightTheme((prev) => {
-    const next = !prev
-    if (next) {
-      localStorage.setItem('lightTheme', 'true')
-    } else {
-      localStorage.removeItem('lightTheme')
-    }
-    return next
-  })
-}
+  const toggleThemeHandler = () => {
+    setLightTheme((prev) => {
+      const next = !prev
+      if (next) {
+        localStorage.setItem('lightTheme', 'true')
+      } else {
+        localStorage.removeItem('lightTheme')
+      }
+      return next
+    })
+  }
 
   return (
     <ThemeContext.Provider
