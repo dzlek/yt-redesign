@@ -1,0 +1,22 @@
+.inputComponent {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 830px;
+
+  & > input {
+    width: 100%;
+    border: none;
+    background-color: rgba(235, 235, 235, 1);
+    padding: 7px 30px 7px 24px;
+    border-radius: 20px;
+  }
+
+  & svg {
+    position: absolute;
+    right: 16px;
+    cursor: pointer;
+  }
+}
