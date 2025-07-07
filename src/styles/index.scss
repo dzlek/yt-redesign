@@ -1,5 +1,6 @@
 @use './reset';
 @use './themes' as *;
+@use './typography';
 
 body {
   background-color: var(--background-color);

@@ -4,6 +4,7 @@ html[data-theme='light'] {
   --background-color: #{$background-color};
 
   --text-primary: #{$text-primary};
+  --text-primary-hover: #{$text-primary-hover};
   --text-secondary: #{$text-secondary};
 
   --btn-background: #{$btn-background};
@@ -14,6 +15,7 @@ html[data-theme='dark'] {
   --background-color: #{$background-color-dark};
 
   --text-primary: #{$text-primary-dark};
+  --text-primary-hover: #{$text-primary-hover-dark};
   --text-secondary: #{$text-secondary-dark};
 
   --btn-background: #{$btn-background-dark};
