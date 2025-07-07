@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 70px 50px 32px;
+}
+
+.logo {
+  padding: 0 59px 0 28px;
+}
+
+.headerItems {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
