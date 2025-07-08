@@ -9,6 +9,9 @@ html[data-theme='light'] {
 
   --btn-background: #{$btn-background};
   --btn-primary-text: #{$btn-primary-text};
+
+  --icon-color: #{$text-primary};
+  --icon-color-hover: #{$text-primary-hover};
 }
 
 html[data-theme='dark'] {
@@ -20,4 +23,7 @@ html[data-theme='dark'] {
 
   --btn-background: #{$btn-background-dark};
   --btn-primary-text: #{$btn-background-dark};
+
+  --icon-color: #{$text-primary-dark};
+  --icon-color-hover: #{$text-primary-hover-dark};
 }

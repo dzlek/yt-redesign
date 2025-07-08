@@ -12,7 +12,7 @@ const Header: FC = () => {
   return (
     <p className="header">
       <div className="headerItems">
-        <BurgerIcon />
+        <BurgerIcon className="icon" />
         <img className="logo" src={logo} alt="Logo" />
         <InputComponent />
       </div>
