@@ -1,4 +1,5 @@
 import { SVGProps } from 'react'
+import { DEFAULT_ICON_OPACITY } from '../shared/constants'
 
 const ShareIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
@@ -10,7 +11,7 @@ const ShareIcon = (props: SVGProps<SVGSVGElement>) => (
     {...props}
   >
     <path
-      opacity="1"
+      opacity={props.opacity ?? DEFAULT_ICON_OPACITY}
       d="M8.55556 0L14 5.6L8.55556 11.2V7.92C4.66667 7.92 1.94444 9.2 0 12C0.777778 8 3.11111 4 8.55556 3.2V0Z"
       fill="currentColor"
     />
