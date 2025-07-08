@@ -13,8 +13,8 @@ const Header: FC = () => {
     <p className="header">
       <div className="headerItems">
         <BurgerIcon className="icon" />
-        <a href="/">
-          <img className="logo" src={logo} alt="Logo" />
+        <a href="/" className="logo">
+          <img src={logo} alt="Logo" />
         </a>
         <InputComponent />
       </div>

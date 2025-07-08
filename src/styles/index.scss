@@ -1,6 +1,7 @@
 @use './reset';
 @use './themes' as *;
-@use './typography';
+@use 'fonts' as *;
+@use './typography' as *;
 
 body {
   background-color: var(--background-color);
@@ -9,4 +10,15 @@ body {
 .icon {
   cursor: pointer;
   color: var(--icon-color);
+}
+
+input,
+textarea,
+button,
+p,
+span,
+label,
+a {
+  @include typography($font-size-m, $font-weight-regular, $line-height-l);
+  opacity: 0.6;
 }
