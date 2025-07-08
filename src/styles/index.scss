@@ -21,6 +21,7 @@ label,
 a {
   @include typography($font-size-m, $font-weight-regular, $line-height-l);
   color: var(--text-primary);
+  opacity: 0.6;
 }
 
 h1,
