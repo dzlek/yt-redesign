@@ -1,1 +1,1 @@
-export const DEFAULT_ICON_OPACITY = 0.24
+export const DEFAULT_ICON_OPACITY = 0.6
