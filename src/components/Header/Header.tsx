@@ -10,7 +10,7 @@ const Header: FC = () => {
   const logo = lightTheme ? '/logo/LogoLight.svg' : '/logo/LogoDark.svg'
 
   return (
-    <div className="header">
+    <div className="headerWrapper">
       <div className="headerItems">
         <BurgerIcon className="icon" />
         <a href="/" className="logo">

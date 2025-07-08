@@ -3,9 +3,9 @@ import './inputComponent.scss'
 
 const InputComponent = () => {
   return (
-    <div className="inputComponent">
+    <div className="inputWrapper">
       <input type="text" placeholder="Search" className="input" />
-      <SearchIcon />
+      <SearchIcon className="icon" />
     </div>
   )
 }
