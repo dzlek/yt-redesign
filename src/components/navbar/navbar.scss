@@ -1,0 +1,21 @@
+.navbarWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  justify-content: flex-start;
+  gap: 29px;
+}
+
+.navbarList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 10px;
+    cursor: pointer;
+  }
+}
