@@ -10,7 +10,7 @@ const Header: FC = () => {
   const logo = lightTheme ? '/logo/LogoLight.svg' : '/logo/LogoDark.svg'
 
   return (
-    <p className="header">
+    <div className="header">
       <div className="headerItems">
         <BurgerIcon className="icon" />
         <a href="/" className="logo">
@@ -19,7 +19,7 @@ const Header: FC = () => {
         <InputComponent />
       </div>
       <UserMenu />
-    </p>
+    </div>
   )
 }
 
