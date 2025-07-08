@@ -11,12 +11,10 @@ const Sidebar: FC = () => {
       <Navbar />
       <Subscriptions />
 
-      <div className="settingsLink">
-        <Link to="/">
-          <SettingIcon />
-          <span> Settings</span>
-        </Link>
-      </div>
+      <Link to="/" className="settingsLink">
+        <SettingIcon />
+        <span> Settings</span>
+      </Link>
     </div>
   )
 }

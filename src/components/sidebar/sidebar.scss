@@ -1,13 +1,14 @@
 .sidebarWrapper {
   display: flex;
   flex-direction: column;
-}
 
-.settingsLink {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 30px;
-  margin-left: 34px;
-  margin-bottom: 30px;
+  .settingsLink {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 34px;
+    margin-bottom: 30px;
+    gap: 13px;
+  }
 }
