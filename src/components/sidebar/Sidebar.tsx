@@ -1,7 +1,13 @@
-export const Sidebar = () => (
-  <ul>
-    <li>Sidebar</li>
-    <li>Sidebar</li>
-    <li>Sidebar</li>
-  </ul>
-)
+import { FC } from 'react'
+import Subscriptions from '../subscriptions/Subscriptions'
+
+const Sidebar: FC = () => {
+  return (
+    <div className="sidebar">
+      Navbar
+      <Subscriptions />
+    </div>
+  )
+}
+
+export default Sidebar

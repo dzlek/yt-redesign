@@ -1,0 +1,29 @@
+.subscriptionsWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  justify-content: flex-start;
+  gap: 29px;
+}
+
+.subscriptionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.subscriptionsItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.avatar {
+  display: inline-block;
+  width: 26px;
+  height: 24px;
+  border-radius: 50%;
+  overflow: hidden;
+}
