@@ -5,6 +5,8 @@ import { ThemeContext } from './context/ThemeContext'
 import Header from './components/header/Header'
 import Sidebar from './components/sidebar/Sidebar'
 
+import AppRouter from './app/router'
+
 function App() {
   const { lightTheme, toggleTheme } = useContext(ThemeContext)
 
@@ -20,7 +22,7 @@ function App() {
           <Sidebar />
         </aside>
         <main>
-          <div className="subtitle">Main</div>
+          <AppRouter />
         </main>
       </div>
 
