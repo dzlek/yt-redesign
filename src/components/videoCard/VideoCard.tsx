@@ -27,12 +27,14 @@ const VideoCard: React.FC<VideoCardProps> = ({
         <span className="duration timeStamp">{duration}</span>
       </div>
       <div className="info">
-        <h4 className="title h4">{title}</h4>
+        <h4 className="title">
+          <span className="ellipsis h4">{title}</span>
+        </h4>
         <p className="subtitleCard">
           <span className="subtitle">
             {views} • {date}
           </span>
-          <span className="subtitle">{author}</span>
+          <span className="subtitle ellipsis">{author}</span>
         </p>
       </div>
     </div>
