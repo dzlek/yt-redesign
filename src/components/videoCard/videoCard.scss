@@ -1,42 +1,43 @@
 .videoCardWrapper {
   overflow: hidden;
+
   .thumbnailWrapper {
     position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
-  }
 
-  .thumbnail {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    border-radius: 15px;
-  }
+    .thumbnail {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 15px;
+    }
 
-  .duration {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    background: rgba(0, 0, 0, 0.3);
-    color: rgb(255, 255, 255);
-    padding: 1px 9px;
-    border-radius: 16px;
+    .duration {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.3);
+      color: rgb(255, 255, 255);
+      padding: 1px 9px;
+      border-radius: 16px;
+    }
   }
 
   .info {
     margin-top: 9px;
-  }
 
-  .title {
-    display: flex;
-    margin: 4px 0 1px 0;
-  }
+    .title {
+      display: flex;
+      margin: 4px 0 1px 0;
+    }
 
-  .subtitleCard {
-    display: flex;
-    justify-content: space-between;
+    .subtitleCard {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &.small {
