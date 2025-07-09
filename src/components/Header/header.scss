@@ -1,19 +1,23 @@
-.header {
+.headerWrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 70px 50px 32px;
-}
 
-.logo {
-  display: flex;
-  padding: 0 59px 0 28px;
-  align-items: center;
-}
+  .headerItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
 
-.headerItems {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
+  .logo {
+    display: flex;
+    padding: 0 59px 0 28px;
+    align-items: center;
+  }
+
+  .icon {
+    color: var(--icon-color-secondary);
+  }
 }

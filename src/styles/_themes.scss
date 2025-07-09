@@ -12,6 +12,7 @@ html[data-theme='light'] {
 
   --icon-color: #{$text-primary};
   --icon-color-hover: #{$text-primary-hover};
+  --icon-color-secondary: #{$icon-color-secondary};
 }
 
 html[data-theme='dark'] {
@@ -26,4 +27,5 @@ html[data-theme='dark'] {
 
   --icon-color: #{$text-primary-dark};
   --icon-color-hover: #{$text-primary-hover-dark};
+  --icon-color-secondary: #{$icon-color-secondary-dark};
 }

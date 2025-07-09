@@ -1,4 +1,4 @@
-.inputComponent {
+.inputWrapper {
   position: relative;
   display: flex;
   justify-content: center;
@@ -6,7 +6,7 @@
   width: 100%;
   max-width: 830px;
 
-  & > .input {
+  .input {
     width: 100%;
     border: none;
     background-color: rgba(235, 235, 235, 1);
@@ -14,9 +14,10 @@
     border-radius: 20px;
   }
 
-  & svg {
+  .icon {
     position: absolute;
     right: 16px;
     cursor: pointer;
+    color: var(--icon-color-secondary);
   }
 }
