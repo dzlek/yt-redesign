@@ -6,7 +6,7 @@ import { menuItems } from './navbarMenuItems'
 
 const Navbar: FC = () => {
   const { lightTheme } = useContext(ThemeContext)
-  const iconOpacity = lightTheme ? undefined : 0.8
+  const iconOpacity = lightTheme ? 1 : 0.8
 
   return (
     <div className="navbarWrapper">

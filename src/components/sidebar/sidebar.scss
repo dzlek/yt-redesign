@@ -10,5 +10,13 @@
     margin-left: 34px;
     margin-bottom: 30px;
     gap: 13px;
+
+    &:hover {
+      fill: var(--icon-color-hover);
+      color: var(--icon-color-hover);
+      span {
+        color: inherit;
+      }
+    }
   }
 }
