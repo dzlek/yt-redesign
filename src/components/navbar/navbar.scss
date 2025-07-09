@@ -18,6 +18,14 @@
       align-items: center;
       gap: 14px;
       cursor: pointer;
+
+      &:hover {
+        fill: var(--icon-color-hover);
+        color: var(--icon-color-hover);
+        p {
+          color: inherit;
+        }
+      }
     }
   }
 }
