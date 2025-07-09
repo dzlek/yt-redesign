@@ -4,7 +4,8 @@ import './App.scss'
 import { ThemeContext } from './context/ThemeContext'
 import Header from './components/header/Header'
 import Sidebar from './components/sidebar/Sidebar'
-import VideoCard from './components/videoCard/VideoCard'
+
+import AppRouter from './app/router'
 
 function App() {
   const { lightTheme, toggleTheme } = useContext(ThemeContext)
@@ -21,15 +22,7 @@ function App() {
           <Sidebar />
         </aside>
         <main>
-          <VideoCard
-            title="A Brief History Of Creation"
-            author="Dollie Blair"
-            date="3 days ago"
-            views="80k views"
-            duration="4:15"
-            thumbnail="/images/сover1.png"
-            variant="small"
-          />
+          <AppRouter />
         </main>
       </div>
 
