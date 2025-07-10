@@ -1,5 +1,6 @@
 import React from 'react'
 import './videoCard.scss'
+import VideoPreview from '../videopreview/VideoPreview'
 
 type VideoCardProps = {
   title: string
@@ -7,24 +8,14 @@ type VideoCardProps = {
   views: string
   date: string
   duration: string
-  thumbnail: string
-  variant?: 'small' | 'large' | 'mobile'
+  imgSrc: string
 }
 
-const VideoCard: React.FC<VideoCardProps> = ({
-  title,
-  author,
-  views,
-  date,
-  duration,
-  thumbnail,
-  variant = 'small',
-}) => {
+const VideoCard: React.FC<VideoCardProps> = ({ title, author, views, date, duration, imgSrc }) => {
   return (
-    <div className={`videoCardWrapper ${variant}`}>
-      <div className="thumbnailWrapper">
-        <img src={thumbnail} alt={title} className="thumbnail" />
-        <span className="duration timeStamp">{duration}</span>
+    <div className="videoCardWrapper">
+      <div className="previewWrapper">
+        <VideoPreview title={title} duration={duration} imgSrc={imgSrc} />
       </div>
       <div className="info">
         <h4 className="title">
