@@ -1,6 +1,7 @@
 import React from 'react'
 import './videoCard.scss'
 import VideoPreview from '../videopreview/VideoPreview'
+import { Link } from 'react-router-dom'
 
 type VideoCardProps = {
   title: string
@@ -13,7 +14,7 @@ type VideoCardProps = {
 
 const VideoCard: React.FC<VideoCardProps> = ({ title, author, views, date, duration, imgSrc }) => {
   return (
-    <div className="videoCardWrapper">
+    <Link to="/" className="videoCardWrapper">
       <div className="previewWrapper">
         <VideoPreview title={title} duration={duration} imgSrc={imgSrc} />
       </div>
@@ -28,7 +29,7 @@ const VideoCard: React.FC<VideoCardProps> = ({ title, author, views, date, durat
           <span className="subtitle ellipsis">{author}</span>
         </p>
       </div>
-    </div>
+    </Link>
   )
 }
 
