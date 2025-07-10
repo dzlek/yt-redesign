@@ -47,7 +47,7 @@
 }
 
 .subtitle {
-  @include typography($font-size-xl, $font-weight-regular);
+  @include typography($font-size-s, $font-weight-regular);
 
   @media (max-width: $breakpoint-mobile) {
     @include typography($font-size-s, $font-weight-regular);
