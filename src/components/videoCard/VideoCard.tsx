@@ -10,18 +10,24 @@ type VideoCardProps = {
   date: string
   duration: string
   imgSrc: string
+  link: string
 }
 
-const VideoCard: React.FC<VideoCardProps> = ({ title, author, views, date, duration, imgSrc }) => {
+const VideoCard: React.FC<VideoCardProps> = ({
+  title,
+  author,
+  views,
+  date,
+  duration,
+  imgSrc,
+  link,
+}) => {
   return (
-    <Link to="/" className="videoCardWrapper">
-      <div className="previewWrapper">
-        <VideoPreview title={title} duration={duration} imgSrc={imgSrc} />
-      </div>
+    <Link to={link} className="videoCardWrapper">
+      <VideoPreview title={title} duration={duration} imgSrc={imgSrc} />
+
       <div className="info">
-        <h4 className="title">
-          <span className="ellipsis h4">{title}</span>
-        </h4>
+        <h4 className="title ellipsis">{title}</h4>
         <p className="subtitleCard">
           <span className="subtitle">
             {views} • {date}

@@ -5,25 +5,19 @@
   height: 100%;
   overflow: hidden;
 
-  .previewWrapper {
-    width: 100%;
-  }
-
   .info {
     height: 50px;
     width: 100%;
 
     .title {
-      margin: 9px 0 0px 0;
+      margin: 5px 0 -4px 0;
       max-width: 100%;
 
-      .ellipsis {
+      &.ellipsis {
         display: block;
         white-space: nowrap;
         overflow: hidden;
-        color: inherit;
         text-overflow: ellipsis;
-        max-width: 100%;
       }
     }
     .subtitleCard {
