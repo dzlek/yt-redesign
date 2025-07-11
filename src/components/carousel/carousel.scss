@@ -1,0 +1,43 @@
+.carouselContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 28px;
+  width: 100%;
+
+  .swiperWrapper {
+    width: 100%;
+  }
+
+  .customArrows {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-right: 149px;
+
+    .arrowLeft,
+    .arrowRight {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+
+  .customSwiper {
+    flex: 1;
+    overflow: hidden;
+
+    .customSlide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
