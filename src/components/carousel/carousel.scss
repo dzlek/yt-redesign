@@ -36,12 +36,10 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    width: 100% !important;
+    width: 100%;
     display: block;
 
     .customSlide {
-      width: 250px !important;
-      height: 200px;
       display: flex;
       align-items: center;
       justify-content: center;

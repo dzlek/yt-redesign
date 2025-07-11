@@ -22,9 +22,11 @@ type VideoCard = {
 
 type CarouselProps = {
   cards: VideoCard[]
+  slideWidth?: number
+  slideHeight?: number
 }
 
-const Carousel = ({ cards }: CarouselProps) => {
+const Carousel = ({ cards, slideWidth = 250, slideHeight = 200 }: CarouselProps) => {
   const swiperRef = useRef<SwiperInstance | null>(null)
 
   return (
@@ -47,7 +49,14 @@ const Carousel = ({ cards }: CarouselProps) => {
         className="customSwiper"
       >
         {cards.map((card, index) => (
-          <SwiperSlide key={'card' + index} className="customSlide">
+          <SwiperSlide
+            key={'card' + index}
+            className="customSlide"
+            style={{
+              width: `${slideWidth}px`,
+              height: `${slideHeight}px`,
+            }}
+          >
             <VideoCard {...card} />
           </SwiperSlide>
         ))}
