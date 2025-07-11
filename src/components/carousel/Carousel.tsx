@@ -6,11 +6,10 @@ import type { Swiper as SwiperInstance } from 'swiper'
 import 'swiper/css'
 import './carousel.scss'
 
-import VideoCard from '../videoCard/VideoCard'
 import { LeftArrowIcon } from '../../icons/LeftArrowIcon'
 import { RightArrowIcon } from '../../icons/RightArrowIcon'
 
-type VideoCard = {
+type Card = {
   title: string
   author: string
   views: string
@@ -21,10 +20,13 @@ type VideoCard = {
 }
 
 type CarouselProps = {
-  cards: VideoCard[]
+  cards: Card[]
+  slideWidth?: number
+  slideHeight?: number
+  children: (card: Card) => React.ReactNode
 }
 
-const Carousel = ({ cards }: CarouselProps) => {
+const Carousel = ({ cards, slideWidth = 250, slideHeight = 200, children }: CarouselProps) => {
   const swiperRef = useRef<SwiperInstance | null>(null)
 
   return (
@@ -38,20 +40,29 @@ const Carousel = ({ cards }: CarouselProps) => {
         </div>
       </div>
 
-      <Swiper
-        modules={[Navigation]}
-        slidesPerView="auto"
-        spaceBetween={40}
-        onSwiper={(swiper: SwiperType) => (swiperRef.current = swiper)}
-        navigation={false}
-        className="customSwiper"
-      >
-        {cards.map((card, index) => (
-          <SwiperSlide key={'card' + index} className="customSlide">
-            <VideoCard {...card} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <div className="swiperWrapper">
+        <Swiper
+          modules={[Navigation]}
+          slidesPerView="auto"
+          spaceBetween={40}
+          onSwiper={(swiper: SwiperType) => (swiperRef.current = swiper)}
+          navigation={false}
+          className="customSwiper"
+        >
+          {cards.map((card, index) => (
+            <SwiperSlide
+              key={'card' + index}
+              className="customSlide"
+              style={{
+                width: `${slideWidth}px`,
+                height: `${slideHeight}px`,
+              }}
+            >
+              {children(card)}
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
   )
 }

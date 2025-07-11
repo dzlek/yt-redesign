@@ -1,15 +1,23 @@
 .carouselContainer {
+  display: flex;
+  flex-direction: column;
   position: relative;
+  gap: 28px;
   width: 100%;
-  padding-top: 40px;
+
+  .swiperWrapper {
+    width: 100%;
+  }
 
   .customArrows {
-    position: relative;
-    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-right: 149px;
 
     .arrowLeft,
     .arrowRight {
-      position: absolute;
       width: 28px;
       height: 28px;
       border-radius: 50%;
@@ -20,28 +28,13 @@
       justify-content: center;
       cursor: pointer;
     }
-
-    .arrowLeft {
-      top: -55px;
-      right: 90px;
-    }
-
-    .arrowRight {
-      top: -55px;
-      right: 50px;
-    }
   }
 
   .customSwiper {
-    position: relative;
-    width: 100%;
+    flex: 1;
     overflow: hidden;
-    width: 100% !important;
-    display: block;
 
     .customSlide {
-      width: 250px !important;
-      height: 200px;
       display: flex;
       align-items: center;
       justify-content: center;
