@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useRef, ReactNode, Children } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper/modules'
 import type { Swiper as SwiperType } from 'swiper'
@@ -9,24 +9,13 @@ import './carousel.scss'
 import { LeftArrowIcon } from '../../icons/LeftArrowIcon'
 import { RightArrowIcon } from '../../icons/RightArrowIcon'
 
-type Card = {
-  title: string
-  author: string
-  views: string
-  date: string
-  duration: string
-  imgSrc: string
-  link: string
-}
-
 type CarouselProps = {
-  cards: Card[]
+  children: ReactNode
   slideWidth?: number
   slideHeight?: number
-  children: (card: Card) => React.ReactNode
 }
 
-const Carousel = ({ cards, slideWidth = 250, slideHeight = 200, children }: CarouselProps) => {
+const Carousel = ({ children, slideWidth = 250, slideHeight = 200 }: CarouselProps) => {
   const swiperRef = useRef<SwiperInstance | null>(null)
 
   return (
@@ -49,16 +38,16 @@ const Carousel = ({ cards, slideWidth = 250, slideHeight = 200, children }: Caro
           navigation={false}
           className="customSwiper"
         >
-          {cards.map((card, index) => (
+          {Children.map(children, (child, index) => (
             <SwiperSlide
-              key={'card' + index}
+              key={index}
               className="customSlide"
               style={{
                 width: `${slideWidth}px`,
                 height: `${slideHeight}px`,
               }}
             >
-              {children(card)}
+              {child}
             </SwiperSlide>
           ))}
         </Swiper>
