@@ -1,0 +1,59 @@
+import { useRef } from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation } from 'swiper/modules'
+import type { Swiper as SwiperType } from 'swiper'
+import type { Swiper as SwiperInstance } from 'swiper'
+import 'swiper/css'
+import './carousel.scss'
+
+import VideoCard from '../videoCard/VideoCard'
+import { LeftArrowIcon } from '../../icons/LeftArrowIcon'
+import { RightArrowIcon } from '../../icons/RightArrowIcon'
+
+type VideoCard = {
+  title: string
+  author: string
+  views: string
+  date: string
+  duration: string
+  imgSrc: string
+  link: string
+}
+
+type CarouselProps = {
+  cards: VideoCard[]
+}
+
+const Carousel = ({ cards }: CarouselProps) => {
+  const swiperRef = useRef<SwiperInstance | null>(null)
+
+  return (
+    <div className="carouselContainer">
+      <div className="customArrows">
+        <div className="arrowLeft" onClick={() => swiperRef.current?.slidePrev()}>
+          <LeftArrowIcon />
+        </div>
+        <div className="arrowRight" onClick={() => swiperRef.current?.slideNext()}>
+          <RightArrowIcon />
+        </div>
+      </div>
+
+      <Swiper
+        modules={[Navigation]}
+        slidesPerView="auto"
+        spaceBetween={40}
+        onSwiper={(swiper: SwiperType) => (swiperRef.current = swiper)}
+        navigation={false}
+        className="customSwiper"
+      >
+        {cards.map((card, index) => (
+          <SwiperSlide key={'card' + index} className="customSlide">
+            <VideoCard {...card} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  )
+}
+
+export default Carousel
