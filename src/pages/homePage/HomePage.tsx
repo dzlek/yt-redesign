@@ -15,7 +15,7 @@ const HomePage = () => {
         slideHeight={200}
         hasSubscription={true}
       />
-      <div className="hide">
+      <div className="hideOnMobile">
         <RecommendedFeed feed={recommendedFeed} slideWidth={540} slideHeight={300} />
         <AuthorFeed author={foodAndDrinkAuthor} slideWidth={250} slideHeight={200} />
       </div>
