@@ -1,12 +1,12 @@
-.sectionFeatured {
+.sectionAuthorFeed {
   position: relative;
-  margin: 25px;
+  margin: 25px 0 25px 25px;
   display: flex;
   flex-direction: column;
 
   .sectionHeader {
     position: absolute;
-    top: -24px;
+    top: -18px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;

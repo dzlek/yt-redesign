@@ -35,7 +35,7 @@ const AuthorFeed = ({
   slideHeight,
 }: AuthorFeedProps) => {
   return (
-    <section className="sectionFeatured">
+    <section className="sectionAuthorFeed">
       <div className="sectionHeader">
         <div className="sectionTitle">
           <Link to={author.link}>
@@ -48,11 +48,11 @@ const AuthorFeed = ({
             <div className="h2">{author.name}</div>
             {!hasSubscription && <div className="paragraph">Recommended channel for you</div>}
           </div>
-
-          {!hasSubscription && (
-            <button className="subscribeButton">Subscribe {author.subscribers}</button>
-          )}
         </div>
+
+        {!hasSubscription && (
+          <button className="subscribeButton">Subscribe {author.subscribers}</button>
+        )}
       </div>
 
       <div className="carouselWrapper">
