@@ -6,7 +6,7 @@
 
   .sectionHeader {
     position: absolute;
-    top: -18px;
+    top: -23px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -14,11 +14,14 @@
     padding-right: 255px;
 
     .subscribeButton {
+      position: absolute;
+      right: 255px;
+      top: 15px;
       background-color: red;
       color: white;
       border: none;
       border-radius: 20px;
-      padding: 6px 20px;
+      padding: 5.5px 19.5px 4.5px 20.5px;
       font-size: 16px;
       cursor: pointer;
       height: fit-content;
@@ -33,7 +36,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 18px;
+    gap: 20px;
 
     .avatarRoot {
       display: flex;
@@ -52,7 +55,8 @@
       display: flex;
       flex-direction: row;
       align-items: baseline;
-      gap: 10px;
+      gap: 19px;
+      margin-top: 5px;
     }
   }
 
