@@ -35,7 +35,7 @@ const AuthorFeed = ({
   slideHeight,
 }: AuthorFeedProps) => {
   return (
-    <section className="sectionFeatured">
+    <section className="sectionAuthorFeed">
       <div className="sectionHeader">
         <div className="sectionTitle">
           <Link to={author.link}>

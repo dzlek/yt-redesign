@@ -1,8 +1,9 @@
 .sectionRecommended {
   position: relative;
-  margin: 25px;
+  margin: 25px 0 25px 25px;
   display: flex;
   flex-direction: column;
+  padding-bottom: 18px;
 
   .sectionHeader {
     position: absolute;
