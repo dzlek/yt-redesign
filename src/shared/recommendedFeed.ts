@@ -1,4 +1,4 @@
-export const recommendedFeed = [
+const recommendedFeed = [
   {
     title: 'Dude You Re Getting A Telescope',
     author: 'Gussie French',
@@ -27,3 +27,5 @@ export const recommendedFeed = [
     link: '/',
   },
 ]
+
+export default recommendedFeed
