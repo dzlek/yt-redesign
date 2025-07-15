@@ -1,0 +1,15 @@
+@import '../../styles/media.scss';
+
+.homePageWrapper {
+  padding-left: 11px;
+  margin-top: -1px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  .hide {
+    @media (max-width: $breakpoint-mobile) {
+      display: none;
+    }
+  }
+}
