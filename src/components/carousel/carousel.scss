@@ -4,9 +4,11 @@
   position: relative;
   gap: 28px;
   width: 100%;
+  overflow: hidden;
 
   .swiperWrapper {
     width: 100%;
+    overflow: hidden;
   }
 
   .customArrows {
@@ -31,11 +33,14 @@
   }
 
   .customSwiper {
-    flex: 1;
-    overflow: hidden;
+    display: flex;
 
+    width: fit-content;
+    max-width: 100%;
+    overflow: visible;
     .customSlide {
       display: flex;
+      flex-shrink: 0;
       align-items: center;
       justify-content: center;
     }
