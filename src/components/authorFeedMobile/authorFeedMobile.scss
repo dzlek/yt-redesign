@@ -1,0 +1,14 @@
+.authorFeedMobileWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 15px 11px;
+}
+
+.videoCardContainer {
+  position: relative;
+}
+
+.videoCardWrapper {
+  position: absolute;
+}
