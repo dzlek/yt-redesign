@@ -29,10 +29,12 @@ const VideoCard: React.FC<VideoCardProps> = ({
       <div className="info">
         <h4 className="title ellipsis">{title}</h4>
         <p className="subtitleCard ">
-          <span className="left subtitle">
-            {views}&nbsp;&bull;&nbsp;&nbsp;{date}
+          <span className="viewsSubtitle">
+            <span className="subtitle">{views}</span>
+            <span className="subtitle">&bull;</span>
+            <span className="subtitle">{date}</span>
           </span>
-          <span className="right ellipsis subtitle">{author}</span>
+          <span className="authorSubtitle ellipsis subtitle">{author}</span>
         </p>
       </div>
     </Link>
