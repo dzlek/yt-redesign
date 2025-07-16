@@ -17,7 +17,11 @@ textarea,
 button,
 p,
 span,
-label,
+label {
+  @include typography($font-size-m, $font-weight-regular, $line-height-m);
+  color: var(--text-primary);
+}
+
 a {
   @include typography($font-size-m, $font-weight-regular, $line-height-l);
   color: var(--text-primary);
