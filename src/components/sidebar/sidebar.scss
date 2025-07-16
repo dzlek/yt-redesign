@@ -36,10 +36,10 @@
   height: 61px;
   background: var(--background-color);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-end;
-  padding: 0px 22px 11px 24px;
-  border-top: 1px solid rgba(241, 241, 241, 1);
+  padding: 0px 22px 7px 24px;
+  border-top: 1px solid var(--border-color);
   z-index: 999;
 
   .mobileSidebarIcon {
@@ -50,11 +50,13 @@
 
     &:hover {
       fill: var(--icon-color-hover);
+      color: var(--icon-color-hover);
     }
   }
 
   .iconLabel {
     font-size: 10px;
+    color: inherit;
   }
 
   @media (min-width: $breakpoint-mobile) {
@@ -64,7 +66,7 @@
 
 .hideOnMobile {
   @media (max-width: $breakpoint-mobile) {
-    display: none !important;
+    display: none;
   }
 }
 
@@ -72,6 +74,6 @@
   display: none;
 
   @media (max-width: $breakpoint-mobile) {
-    display: flex !important;
+    display: flex;
   }
 }
