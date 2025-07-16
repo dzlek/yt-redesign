@@ -19,22 +19,13 @@ interface AuthorFeedProps {
     subscribers: string
     feed: FeedItem[]
   }
-  hasSubscription?: boolean
-  slideWidth: number
-  slideHeight: number
 }
 
-const AuthorFeedMobile = ({ author, slideWidth, slideHeight }: AuthorFeedProps) => {
-  const paddingBottomRatio = (slideHeight / slideWidth) * 100
-
+const AuthorFeedMobile = ({ author }: AuthorFeedProps) => {
   return (
     <section className="authorFeedMobileWrapper">
       {author.feed.map((card, i) => (
-        <div
-          key={'card' + i}
-          className="videoCardContainer"
-          style={{ paddingBottom: `${paddingBottomRatio}%` }}
-        >
+        <div key={'card' + i}>
           <div className="videoCardWrapper">
             <VideoCard {...card} />
           </div>
