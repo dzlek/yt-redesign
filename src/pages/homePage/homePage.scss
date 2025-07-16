@@ -3,6 +3,10 @@
 .homePageWrapper {
   padding-left: 11px;
 
+  @media (max-width: $breakpoint-mobile) {
+    padding: 0 5px;
+  }
+
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -10,6 +14,14 @@
   .hideOnMobile {
     @media (max-width: $breakpoint-mobile) {
       display: none;
+    }
+  }
+
+  .hideOnDesktop {
+    display: none;
+
+    @media (max-width: $breakpoint-mobile) {
+      display: block;
     }
   }
 }

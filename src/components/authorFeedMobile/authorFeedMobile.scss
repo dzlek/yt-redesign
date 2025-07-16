@@ -1,0 +1,13 @@
+.authorFeedMobileWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 15px 11px;
+  height: calc(100svh - 61px);
+  overflow-y: auto;
+}
+
+.videoCardWrapper {
+  width: 100%;
+  height: 30svh;
+}
