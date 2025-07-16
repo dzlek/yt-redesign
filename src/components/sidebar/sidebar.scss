@@ -1,3 +1,5 @@
+@import '../../styles/media.scss';
+
 .sidebarWrapper {
   display: flex;
   flex-direction: column;
@@ -14,9 +16,61 @@
     &:hover {
       fill: var(--icon-color-hover);
       color: var(--icon-color-hover);
+
       span {
         color: inherit;
       }
     }
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    display: none;
+  }
+}
+
+.mobileSidebar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--background-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid var(--border-color);
+  z-index: 999;
+
+  .mobileSidebarIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      fill: var(--icon-color-hover);
+    }
+  }
+
+  .iconLabel {
+    font-size: 10px;
+  }
+
+  @media (min-width: $breakpoint-mobile) {
+    display: none;
+  }
+}
+
+.hideOnMobile {
+  @media (max-width: $breakpoint-mobile) {
+    display: none !important;
+  }
+}
+
+.hideOnDesktop {
+  display: none;
+
+  @media (max-width: $breakpoint-mobile) {
+    display: flex !important;
   }
 }
