@@ -3,6 +3,7 @@ import './channelPage.scss'
 import AuthorFeed from '../../components/authorFeed/AuthorFeed'
 import margaretPhelpsAuthor from '../../shared/margaretPhelpsAuthor'
 import { NotificationsIcon } from '../../icons'
+import ChannelTabs from '../../components/channelTabs/ChannelTabs'
 
 const ChannelPage = () => {
   const user = margaretPhelpsAuthor
@@ -32,8 +33,7 @@ const ChannelPage = () => {
 
       <div className="channelContainer">
         <div className="channelTabs paragraph">
-          ChannelTabs
-          {/* <ChannelTabs/> */}
+          <ChannelTabs />
         </div>
         <div className="videoBlock">VideoBlock{/*  <VideoBlock/> */}</div>
 

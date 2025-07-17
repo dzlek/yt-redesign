@@ -70,13 +70,14 @@
   }
   .channelContainer {
     position: relative;
+    margin-top: 17px;
+
     .channelTabs {
-      margin-top: 20px;
-      font-size: 18px;
+      margin-left: -5px;
     }
 
     .videoBlock {
-      margin-top: 54px;
+      margin-top: 57px;
       margin-right: 545px;
 
       //NOTE: temporary develop VideoBlock
@@ -94,7 +95,7 @@
     }
   }
   .authorFeedWrapper {
-    margin-top: 61px;
+    margin-top: 67px;
     margin-right: -70px;
   }
 }
