@@ -9,7 +9,7 @@ const ChannelTabs = () => {
         <Tabs.List className="tabsList">
           {tabItems.map(({ value, label, icon }) => (
             <Tabs.Trigger key={value} value={value} className="tabTrigger">
-              {icon || label}
+              {icon} {label}
               <span className="tabUnderline" />
             </Tabs.Trigger>
           ))}
