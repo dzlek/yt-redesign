@@ -26,7 +26,7 @@ const AuthorFeedMobile = ({ author }: AuthorFeedProps) => {
     <section className="authorFeedMobileWrapper">
       {author.feed.map((card, i) => (
         <div key={'card' + i}>
-          <div className="videoCardWrapper">
+          <div className="videoCardWrapperMobile">
             <VideoCard {...card} />
           </div>
         </div>
