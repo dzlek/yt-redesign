@@ -6,7 +6,7 @@ const margaretPhelpsAuthor = {
   feed: [
     {
       title: 'Astronomy Or Astrology',
-      author: 'Margaret Phelps',
+      author: 'Food & Drink',
       views: '240k views',
       date: '4 months ago',
       duration: '7:36',
@@ -15,7 +15,7 @@ const margaretPhelpsAuthor = {
     },
     {
       title: 'Advertising Outdoors',
-      author: 'Margaret Phelps',
+      author: 'Food & Drink',
       views: '13k views',
       date: '15 days ago',
       duration: '2:19',
@@ -24,7 +24,7 @@ const margaretPhelpsAuthor = {
     },
     {
       title: 'Radio Astronomy',
-      author: 'Margaret Phelps',
+      author: 'Food & Drink',
       views: '1k views',
       date: '11 months ago',
       duration: '9:05',
@@ -33,7 +33,7 @@ const margaretPhelpsAuthor = {
     },
     {
       title: 'A Good Autoresponder',
-      author: 'Margaret Phelps',
+      author: 'Food & Drink',
       views: '45k views',
       date: '2 months ago',
       duration: '3:40',
@@ -42,7 +42,7 @@ const margaretPhelpsAuthor = {
     },
     {
       title: 'Baby Monitor Technology',
-      author: 'Margaret Phelps',
+      author: 'Food & Drink',
       views: '86k views',
       date: '7 days ago',
       duration: '1:56',
@@ -51,7 +51,7 @@ const margaretPhelpsAuthor = {
     },
     {
       title: 'Asteroids',
-      author: 'Margaret Phelps',
+      author: 'Dollie Blair',
       views: '123k views',
       date: '4 months ago',
       duration: '4:12',

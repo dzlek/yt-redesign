@@ -1,6 +1,5 @@
 import * as Avatar from '@radix-ui/react-avatar'
 import './channelPage.scss'
-import AuthorFeed from '../../components/authorFeed/AuthorFeed'
 import margaretPhelpsAuthor from '../../shared/margaretPhelpsAuthor'
 import { NotificationsIcon } from '../../icons'
 import ChannelTabs from '../../components/channelTabs/ChannelTabs'
@@ -8,6 +7,7 @@ import VideoBlock from '../../components/videoBlock/VideoBlock'
 import channelPageData from '../../shared/channelPageData'
 import SidebarRecommended from '../../components/SidebarRecommended/SidebarRecommended'
 import { recommendedSadebarChannels } from '../../shared/recommendedSadebarChannels'
+import RecommendedFeed from '../../components/recommendedFeed/recommendedFeed'
 
 const ChannelPage = () => {
   const user = margaretPhelpsAuthor
@@ -51,7 +51,12 @@ const ChannelPage = () => {
       </div>
 
       <div className="authorFeedWrapper">
-        <AuthorFeed author={user} slideWidth={250} slideHeight={200} hasSubscription={true} />
+        <RecommendedFeed
+          title={user.name + ' videos'}
+          feed={user.feed}
+          slideWidth={250}
+          slideHeight={200}
+        />
       </div>
     </div>
   )
