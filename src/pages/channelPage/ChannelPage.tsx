@@ -6,6 +6,8 @@ import { NotificationsIcon } from '../../icons'
 import ChannelTabs from '../../components/channelTabs/ChannelTabs'
 import VideoBlock from '../../components/videoBlock/VideoBlock'
 import channelPageData from '../../shared/channelPageData'
+import SidebarRecommended from '../../components/SidebarRecommended/SidebarRecommended'
+import { recommendedSadebarChannels } from '../../shared/recommendedSadebarChannels'
 
 const ChannelPage = () => {
   const user = margaretPhelpsAuthor
@@ -44,8 +46,7 @@ const ChannelPage = () => {
         </div>
 
         <div className="sidebarRecommendedWrapper">
-          sidebarRecommended
-          {/* <SidebarRecommended items={recommendedSadebarChannels} /> */}
+          <SidebarRecommended items={recommendedSadebarChannels} />
         </div>
       </div>
 
