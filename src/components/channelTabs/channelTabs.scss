@@ -40,4 +40,8 @@
       transition: transform 0.2s ease-in-out;
     }
   }
+
+  @media (max-width: 1400px) {
+    gap: 30px;
+  }
 }
