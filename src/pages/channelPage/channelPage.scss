@@ -1,0 +1,100 @@
+.channelPageWrapper {
+  border: 1px dotted red;
+  width: 100%;
+  margin-left: 35px;
+  padding-right: 70px;
+
+  //NOTE: temporary 2 fix in header
+  margin-top: -20px;
+
+  .channelBanner {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 14px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .channelInfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+
+    .authorHeader {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+
+      .avatar {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        opacity: 1;
+      }
+
+      .authorName {
+        padding-top: 8px;
+      }
+    }
+    .channelInteractions {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 20px;
+
+      .subscribeButton {
+        background-color: red;
+        color: white;
+        border: 1px solid red;
+        border-radius: 20px;
+        padding: 10px 19.5px 10px 20.5px;
+        font-size: 16px;
+        cursor: pointer;
+        height: fit-content;
+
+        &:hover {
+          background-color: darkred;
+        }
+      }
+    }
+  }
+  .channelContainer {
+    position: relative;
+    .channelTabs {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    .videoBlock {
+      margin-top: 54px;
+      margin-right: 545px;
+
+      //NOTE: temporary develop VideoBlock
+      height: 250px;
+      border: 1px dotted green;
+    }
+
+    .sidebarRecommendedWrapper {
+      position: absolute;
+      top: 0;
+      right: 153px;
+      width: 188px;
+      height: 260px;
+      border: 1px magenta solid;
+    }
+  }
+  .authorFeedWrapper {
+    margin-top: 61px;
+    margin-right: -70px;
+  }
+}
