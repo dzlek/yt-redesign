@@ -2,7 +2,7 @@ const margaretPhelpsAuthor = {
   name: 'Margaret Phelps',
   avatar: './avatars/user3.png',
   link: '/',
-  subscribers: '1.2m',
+  subscribers: '2.3m',
   feed: [
     {
       title: 'Astronomy Or Astrology',

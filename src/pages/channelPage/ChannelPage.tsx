@@ -4,6 +4,8 @@ import AuthorFeed from '../../components/authorFeed/AuthorFeed'
 import margaretPhelpsAuthor from '../../shared/margaretPhelpsAuthor'
 import { NotificationsIcon } from '../../icons'
 import ChannelTabs from '../../components/channelTabs/ChannelTabs'
+import VideoBlock from '../../components/videoBlock/VideoBlock'
+import channelPageData from '../../shared/channelPageData'
 
 const ChannelPage = () => {
   const user = margaretPhelpsAuthor
@@ -31,11 +33,15 @@ const ChannelPage = () => {
         </div>
       </div>
 
-      <div className="channelContainer">
-        <div className="channelTabs paragraph">
-          <ChannelTabs />
+      <div className="channelContainerAndSidebar">
+        <div className="channelContainer">
+          <div className="channelTabs">
+            <ChannelTabs />
+          </div>
+          <div className="videoBlock">
+            <VideoBlock {...channelPageData} />
+          </div>
         </div>
-        <div className="videoBlock">VideoBlock{/*  <VideoBlock/> */}</div>
 
         <div className="sidebarRecommendedWrapper">
           sidebarRecommended

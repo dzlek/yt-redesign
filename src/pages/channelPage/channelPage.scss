@@ -4,9 +4,6 @@
   margin-left: 35px;
   padding-right: 70px;
 
-  //NOTE: temporary 2 fix in header
-  margin-top: -20px;
-
   .channelBanner {
     width: 100%;
     height: 280px;
@@ -68,32 +65,39 @@
       }
     }
   }
-  .channelContainer {
-    position: relative;
-    margin-top: 17px;
 
-    .channelTabs {
-      margin-left: -5px;
-    }
+  .channelContainerAndSidebar {
+    display: flex;
+    gap: 70px;
 
-    .videoBlock {
-      margin-top: 57px;
-      margin-right: 545px;
+    .channelContainer {
+      display: flex;
+      flex-direction: column;
+      margin-top: 17px;
 
-      //NOTE: temporary develop VideoBlock
-      height: 250px;
-      border: 1px dotted green;
+      .channelTabs {
+        margin-left: -5px;
+      }
+
+      .videoBlock {
+        margin-top: 57px;
+        max-width: 1120px;
+        min-width: 0;
+        height: 250px;
+
+        //NOTE: temporary develop VideoBlock
+        // border: 1px dotted green;
+      }
     }
 
     .sidebarRecommendedWrapper {
-      position: absolute;
-      top: 0;
-      right: 153px;
+      margin: 0 auto;
       width: 188px;
       height: 260px;
       border: 1px magenta solid;
     }
   }
+
   .authorFeedWrapper {
     margin-top: 67px;
     margin-right: -70px;
