@@ -1,9 +1,8 @@
-// src/app/router.tsx
 import { Routes, Route } from 'react-router-dom'
 
 import HomePage from '../pages/homePage/HomePage'
 import ChannelPage from '../pages/channelPage/ChannelPage'
-import VideoPlayerPage from '../pages/VideoPlayerPage/VideoPlayerPage'
+import VideoPlayerPage from '../pages/videoPlayerPage/VideoPlayerPage'
 
 const AppRouter = () => {
   return (
