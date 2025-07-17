@@ -1,0 +1,43 @@
+.tabsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tabsList {
+  display: flex;
+  gap: 62px;
+}
+
+.tabTrigger {
+  position: relative;
+  padding: 0 4px;
+  font-size: 18px;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.tabTrigger[data-state='active'] {
+  color: red;
+  font-weight: 700;
+}
+
+.tabUnderline {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 100%;
+  background-color: red;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.tabTrigger[data-state='active'] .tabUnderline {
+  transform: scaleX(1);
+}
