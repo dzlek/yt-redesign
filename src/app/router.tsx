@@ -1,4 +1,3 @@
-// src/app/router.tsx
 import { Routes, Route } from 'react-router-dom'
 
 import HomePage from '../pages/homePage/HomePage'

@@ -1,6 +1,7 @@
 import { FC, useContext } from 'react'
-import { BurgerIcon } from '../../icons'
+import { BurgerIcon, SearchIcon } from '../../icons'
 import './header.scss'
+import * as Avatar from '@radix-ui/react-avatar'
 import { ThemeContext } from '../../context/ThemeContext'
 import InputComponent from '../input/InputComponent'
 import UserMenu from '../userMenu/UserMenu'
@@ -12,13 +13,26 @@ const Header: FC = () => {
   return (
     <div className="headerWrapper">
       <div className="headerItems">
-        <BurgerIcon className="icon" />
+        <div className="hideOnMobile">
+          <BurgerIcon className="icon" />
+        </div>
         <a href="/" className="logo">
           <img src={logo} alt="Logo" />
         </a>
-        <InputComponent />
+        <div className="hideOnMobile inputWrapper">
+          <InputComponent />
+        </div>
       </div>
-      <UserMenu />
+      <SearchIcon className="icon searchIconMobile hideOnDesktop" />
+      <div className="hideOnMobile">
+        <UserMenu />
+      </div>
+      <div className="hideOnDesktop">
+        <Avatar.Root>
+          <Avatar.Image src={'../avatars/user0.png'} alt={'User avatar'} className="userAvatar" />
+          <Avatar.Fallback>{'user'}</Avatar.Fallback>
+        </Avatar.Root>
+      </div>
     </div>
   )
 }
