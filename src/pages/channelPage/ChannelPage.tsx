@@ -41,17 +41,17 @@ const ChannelPage = () => {
           <div className="channelTabs">
             <ChannelTabs />
           </div>
-          <div className="videoBlock">
+          <div className="videoBlock hideOnMobile">
             <VideoBlock {...channelPageData} />
           </div>
         </div>
 
-        <div className="sidebarRecommendedWrapper">
+        <div className="sidebarRecommendedWrapper hideOnMobile">
           <SidebarRecommended items={recommendedSadebarChannels} />
         </div>
       </div>
 
-      <div className="recommendedFeedWrapper">
+      <div className="recommendedFeedWrapper hideOnMobile">
         <RecommendedFeed
           title={user.name + ' videos'}
           feed={user.feed}

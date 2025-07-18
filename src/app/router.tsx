@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 
 import HomePage from '../pages/homePage/HomePage'
 import ChannelPage from '../pages/channelPage/ChannelPage'
-import VideoPlayerPage from '../pages/videoPlayerPage/VideoPlayerPage'
+import VideoPlayerPage from '../pages/VideoPlayerPage/VideoPlayerPage'
 
 const AppRouter = () => {
   return (

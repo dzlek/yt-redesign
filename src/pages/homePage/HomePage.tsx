@@ -20,7 +20,12 @@ const HomePage = () => {
       </div>
 
       <div className="hideOnMobile">
-        <RecommendedFeed feed={recommendedFeed} slideWidth={540} slideHeight={300} />
+        <RecommendedFeed
+          title={'Recommended'}
+          feed={recommendedFeed}
+          slideWidth={540}
+          slideHeight={300}
+        />
       </div>
 
       <div className="hideOnMobile">

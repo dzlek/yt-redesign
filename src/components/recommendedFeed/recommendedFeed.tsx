@@ -17,14 +17,15 @@ interface RecommendedFeedProps {
   feed: FeedItem[]
   slideWidth: number
   slideHeight: number
+  title: string
 }
 
-const RecommendedFeed = ({ feed, slideWidth, slideHeight }: RecommendedFeedProps) => {
+const RecommendedFeed = ({ feed, slideWidth, slideHeight, title }: RecommendedFeedProps) => {
   return (
     <section className="sectionRecommended">
       <div className="sectionHeader">
         <div className="sectionTitle">
-          <div className="h2">Recommended</div>
+          <div className="h2">{title}</div>
         </div>
       </div>
 
