@@ -1,0 +1,100 @@
+.channelPageWrapper {
+  width: 100%;
+  margin-left: 35px;
+  padding-right: 70px;
+
+  .channelBanner {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 14px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .channelInfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+
+    .authorHeader {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+
+      .avatar {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        opacity: 1;
+      }
+
+      .authorName {
+        padding-top: 8px;
+      }
+    }
+    .channelInteractions {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 20px;
+
+      .subscribeButton {
+        background-color: red;
+        color: white;
+        border: 1px solid red;
+        border-radius: 20px;
+        padding: 10px 19.5px 8px 19.5px;
+        font-size: 16px;
+        cursor: pointer;
+        height: fit-content;
+
+        &:hover {
+          background-color: darkred;
+        }
+      }
+    }
+  }
+
+  .channelContainerAndSidebar {
+    display: flex;
+    gap: 10px;
+
+    .channelContainer {
+      display: flex;
+      flex-direction: column;
+      margin-top: 17px;
+
+      .channelTabs {
+        margin-left: -5px;
+      }
+
+      .videoBlock {
+        margin-top: 57px;
+        max-width: 1120px;
+        min-width: 0;
+        height: 250px;
+      }
+    }
+
+    .sidebarRecommendedWrapper {
+      margin: 5px auto;
+      padding-left: 110px;
+    }
+  }
+
+  .recommendedFeedWrapper {
+    margin-top: 67px;
+    margin-right: -70px;
+    margin-left: -25px;
+  }
+}

@@ -1,5 +1,6 @@
 import * as Avatar from '@radix-ui/react-avatar'
 import './sidebarRecommended.scss'
+import { Link } from 'react-router-dom'
 
 type RecommendedChannel = {
   name: string
@@ -16,13 +17,15 @@ const SidebarRecommended = ({ items }: SidebarRecommendedProps) => {
       <h3 className="title">Recommended channel</h3>
       <ul className="recommendedList">
         {items.map((channel) => (
-          <li className="recommendedItem" key={channel.name}>
-            <Avatar.Root>
-              <Avatar.Image src={channel.avatar} alt={channel.name} className="avatar" />
-              <Avatar.Fallback>{channel.name[0]}</Avatar.Fallback>
-            </Avatar.Root>
-            <p className="name">{channel.name}</p>
-          </li>
+          <Link to={'/'} key={channel.name}>
+            <li className="recommendedItem">
+              <Avatar.Root>
+                <Avatar.Image src={channel.avatar} alt={channel.name} className="avatar" />
+                <Avatar.Fallback>{channel.name[0]}</Avatar.Fallback>
+              </Avatar.Root>
+              <p className="name">{channel.name}</p>
+            </li>
+          </Link>
         ))}
       </ul>
     </div>

@@ -2,6 +2,7 @@
 @use './themes' as *;
 @use 'fonts' as *;
 @use './typography' as *;
+@import './media.scss';
 
 body {
   background-color: var(--background-color);
@@ -33,4 +34,18 @@ h3,
 h4,
 h5 {
   color: var(--text-secondary);
+}
+
+.hideOnMobile {
+  @media (max-width: $breakpoint-mobile) {
+    display: none;
+  }
+}
+
+.hideOnDesktop {
+  display: none;
+
+  @media (max-width: $breakpoint-mobile) {
+    display: block;
+  }
 }
