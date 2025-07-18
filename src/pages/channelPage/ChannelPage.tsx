@@ -8,6 +8,7 @@ import channelPageData from '../../shared/channelPageData'
 import SidebarRecommended from '../../components/SidebarRecommended/SidebarRecommended'
 import { recommendedSadebarChannels } from '../../shared/recommendedSadebarChannels'
 import RecommendedFeed from '../../components/recommendedFeed/recommendedFeed'
+import AuthorFeedMobile from '../../components/authorFeedMobile/AuthorFeedMobile'
 
 const ChannelPage = () => {
   const user = margaretPhelpsAuthor
@@ -50,13 +51,17 @@ const ChannelPage = () => {
         </div>
       </div>
 
-      <div className="authorFeedWrapper">
+      <div className="recommendedFeedWrapper">
         <RecommendedFeed
           title={user.name + ' videos'}
           feed={user.feed}
           slideWidth={250}
           slideHeight={200}
         />
+      </div>
+
+      <div className="hideOnDesktop">
+        <AuthorFeedMobile author={user} />
       </div>
     </div>
   )
