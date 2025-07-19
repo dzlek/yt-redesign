@@ -13,6 +13,7 @@ html[data-theme='light'] {
   --icon-color: #{$text-primary};
   --icon-color-hover: #{$text-primary-hover};
   --icon-color-secondary: #{$icon-color-secondary};
+  --icon-color-arrow: #{$icon-color-arrow};
 
   --border-color: #{$border-color};
 }
@@ -30,6 +31,7 @@ html[data-theme='dark'] {
   --icon-color: #{$text-primary-dark};
   --icon-color-hover: #{$text-primary-hover-dark};
   --icon-color-secondary: #{$icon-color-secondary-dark};
+  --icon-color-arrow: #{$icon-color-arrow-dark};
 
   --border-color: #{$border-color-dark};
 }

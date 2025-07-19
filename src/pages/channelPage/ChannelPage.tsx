@@ -7,7 +7,7 @@ import VideoBlock from '../../components/videoBlock/VideoBlock'
 import channelPageData from '../../shared/channelPageData'
 import SidebarRecommended from '../../components/SidebarRecommended/SidebarRecommended'
 import { recommendedSadebarChannels } from '../../shared/recommendedSadebarChannels'
-import RecommendedFeed from '../../components/recommendedFeed/recommendedFeed'
+import RecommendedFeed from '../../components/recommendedFeed/RecommendedFeed'
 import AuthorFeedMobile from '../../components/authorFeedMobile/AuthorFeedMobile'
 
 const ChannelPage = () => {
