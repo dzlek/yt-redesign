@@ -1,10 +1,8 @@
 import './videoPlayerPage.scss'
-import SidebarRecommended from '../../components/SidebarRecommended/SidebarRecommended'
+import SidebarRecommended from '../../components/sidebarRecommended/SidebarRecommended'
 import { recommendedSadebarChannels } from '../../shared/recommendedSadebarChannels'
 
 const VideoPlayerPage = () => {
-  // const author = DollieBlair
-
   return (
     <div className="videoPlayerWrapper">
       <div className="mainContent">

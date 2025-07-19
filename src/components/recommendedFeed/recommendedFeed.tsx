@@ -25,7 +25,7 @@ const RecommendedFeed = ({ feed, slideWidth, slideHeight, title }: RecommendedFe
     <section className="sectionRecommended">
       <div className="sectionHeader">
         <div className="sectionTitle">
-          <div className="h2">{title}</div>
+          <h2 className="h2">{title}</h2>
         </div>
       </div>
 

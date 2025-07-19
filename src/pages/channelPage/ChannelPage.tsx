@@ -5,9 +5,9 @@ import { NotificationsIcon } from '../../icons'
 import ChannelTabs from '../../components/channelTabs/ChannelTabs'
 import VideoBlock from '../../components/videoBlock/VideoBlock'
 import channelPageData from '../../shared/channelPageData'
-import SidebarRecommended from '../../components/SidebarRecommended/SidebarRecommended'
+import SidebarRecommended from '../../components/sidebarRecommended/SidebarRecommended'
 import { recommendedSadebarChannels } from '../../shared/recommendedSadebarChannels'
-import RecommendedFeed from '../../components/recommendedFeed/recommendedFeed'
+import RecommendedFeed from '../../components/recommendedFeed/RecommendedFeed'
 import AuthorFeedMobile from '../../components/authorFeedMobile/AuthorFeedMobile'
 
 const ChannelPage = () => {

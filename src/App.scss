@@ -8,6 +8,16 @@
   flex-direction: row;
 }
 
+.sidebar-container {
+  width: 219px;
+  transition: all 0.3s ease;
+
+  &.closed {
+    width: 0;
+    overflow: hidden;
+  }
+}
+
 main {
   flex: 1;
   min-width: 0;
