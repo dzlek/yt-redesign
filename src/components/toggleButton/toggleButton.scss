@@ -1,0 +1,25 @@
+.toggleBtn {
+  all: unset;
+  width: 44px;
+  height: 28px;
+  background-color: var(--toggle-background);
+  border-radius: 9999px;
+  position: relative;
+  transition: background-color 0.2s;
+
+  .circle {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: grey;
+
+    border-radius: 50%;
+    transition: transform 0.2s;
+    transform: translateX(2px);
+  }
+}
+
+.toggleBtn[data-state='checked'] .circle {
+  transform: translateX(18px);
+  background-color: var(--toggle-color);
+}
