@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import './App.scss'
 
 import { ThemeContext } from './context/ThemeContext'
@@ -9,6 +9,7 @@ import AppRouter from './app/router'
 
 function App() {
   const { lightTheme, toggleTheme } = useContext(ThemeContext)
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true)
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', lightTheme ? 'light' : 'dark')
@@ -16,9 +17,9 @@ function App() {
 
   return (
     <div className="app">
-      <Header />
+      <Header onBurgerClick={() => setIsSidebarOpen((prev) => !prev)} />
       <div className="app-container">
-        <aside>
+        <aside className={`sidebar-container ${isSidebarOpen ? ' ' : 'closed'}`}>
           <Sidebar />
         </aside>
         <main>
