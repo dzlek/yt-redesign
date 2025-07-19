@@ -1,6 +1,7 @@
 import AuthorFeed from '../../components/authorFeed/AuthorFeed'
 import AuthorFeedMobile from '../../components/authorFeedMobile/AuthorFeedMobile'
 import RecommendedFeed from '../../components/recommendedFeed/RecommendedFeed'
+
 import dollieBlairAuthor from '../../shared/dollieBlairAuthor'
 import foodAndDrinkAuthor from '../../shared/foodAndDrinkAuthor'
 import recommendedFeed from '../../shared/recommendedFeed'
