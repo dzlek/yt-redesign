@@ -52,14 +52,17 @@ const VideoPlayerPage = () => {
                 </Link>
                 <div className="videoAuthorAndDescription">
                   <h2 className="authorSubtitle h2">{video.author}</h2>
-                  <span className="published">Published on {video.publishedDate}</span>
-                  <span className="description ellipsis-multiline">{video.description}</span>
-                  <span className="paragraph showMore">Show more</span>
+                  <span className="published hideOnMobile">Published on {video.publishedDate}</span>
+                  <span className="published hideOnDesktop">{video.subscribers} subcsribed</span>
+                  <span className=" description ellipsis-multiline hideOnMobile">
+                    {video.description}
+                  </span>
+                  <span className="paragraph showMore hideOnMobile">Show more</span>
                 </div>
               </div>
             </div>
-
-            <button className="subscribeButton">Subscribe {video.subscribers}</button>
+            <span className="subscribeLnk hideOnDesktop">Subscribe</span>
+            <button className="subscribeButton hideOnMobile">Subscribe {video.subscribers}</button>
           </div>
         </div>
       </div>
