@@ -1,7 +1,7 @@
 const margaretPhelpsAuthor = {
   name: 'Margaret Phelps',
   avatar: './avatars/user3.png',
-  link: '/',
+  link: '/channel',
   subscribers: '2.3m',
   feed: [
     {
@@ -11,7 +11,7 @@ const margaretPhelpsAuthor = {
       date: '4 months ago',
       duration: '7:36',
       imgSrc: './images/margo1.png',
-      link: '/',
+      link: '/player',
     },
     {
       title: 'Advertising Outdoors',
@@ -20,7 +20,7 @@ const margaretPhelpsAuthor = {
       date: '15 days ago',
       duration: '2:19',
       imgSrc: './images/margo2.png',
-      link: '/',
+      link: '/player',
     },
     {
       title: 'Radio Astronomy',
@@ -29,16 +29,16 @@ const margaretPhelpsAuthor = {
       date: '11 months ago',
       duration: '9:05',
       imgSrc: './images/margo3.png',
-      link: '/',
+      link: '/player',
     },
     {
-      title: 'A Good Autoresponder',
+      title: 'A Good AutoResponder',
       author: 'Food & Drink',
       views: '45k views',
       date: '2 months ago',
       duration: '3:40',
       imgSrc: './images/margo4.png',
-      link: '/',
+      link: '/player',
     },
     {
       title: 'Baby Monitor Technology',
@@ -47,7 +47,7 @@ const margaretPhelpsAuthor = {
       date: '7 days ago',
       duration: '1:56',
       imgSrc: './images/margo5.png',
-      link: '/',
+      link: '/player',
     },
     {
       title: 'Asteroids',
@@ -56,7 +56,7 @@ const margaretPhelpsAuthor = {
       date: '4 months ago',
       duration: '4:12',
       imgSrc: './images/margo6.png',
-      link: '/',
+      link: '/player',
     },
   ],
 }

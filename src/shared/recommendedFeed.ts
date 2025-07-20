@@ -6,7 +6,7 @@ const recommendedFeed = [
     date: '5 months ago',
     duration: '3:40',
     imgSrc: './images/rec1.png',
-    link: '/',
+    link: '/player',
   },
   {
     title: 'Moon Gazing',
@@ -15,7 +15,7 @@ const recommendedFeed = [
     date: '11 months ago',
     duration: '2:12',
     imgSrc: './images/rec2.png',
-    link: '/',
+    link: '/player',
   },
   {
     title: 'Moon Gazing',
@@ -24,7 +24,7 @@ const recommendedFeed = [
     date: '4 months ago',
     duration: '2:36',
     imgSrc: './images/rec3.png',
-    link: '/',
+    link: '/player',
   },
 ]
 

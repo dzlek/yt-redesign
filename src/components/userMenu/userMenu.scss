@@ -8,4 +8,25 @@
 .userMenuItems {
   display: flex;
   gap: 50px;
+
+  .notificationContainer {
+    position: relative;
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      width: 18px;
+      height: 18px;
+      border-radius: 9999px;
+      background-color: red;
+      color: white;
+      border: 1px solid var(--background-color);
+      font-family: Mulish;
+      font-weight: 700;
+      font-size: 12px;
+    }
+  }
 }
