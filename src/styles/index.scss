@@ -38,7 +38,7 @@ h5 {
 
 .hideOnMobile {
   @media (max-width: $breakpoint-mobile) {
-    display: none;
+    display: none !important;
   }
 }
 
