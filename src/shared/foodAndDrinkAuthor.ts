@@ -1,7 +1,7 @@
 const foodAndDrinkAuthor = {
   name: 'Food & Drink',
   avatar: './avatars/user8.png',
-  link: '/channel/food-and-drink',
+  link: '/channel',
   subscribers: '1.1m',
   feed: [
     {
@@ -11,7 +11,7 @@ const foodAndDrinkAuthor = {
       date: '4 months ago',
       duration: '7:36',
       imgSrc: './images/food1.png',
-      link: '/',
+      link: '/player',
     },
     {
       title: 'Advertising Outdoors',
@@ -20,7 +20,7 @@ const foodAndDrinkAuthor = {
       date: '15 days ago',
       duration: '2:19',
       imgSrc: './images/food2.png',
-      link: '/',
+      link: '/player',
     },
     {
       title: 'Radio Astronomy',
@@ -29,7 +29,7 @@ const foodAndDrinkAuthor = {
       date: '11 months ago',
       duration: '9:05',
       imgSrc: './images/food3.png',
-      link: '/',
+      link: '/player',
     },
     {
       title: 'A Good Autoresponder',
@@ -38,7 +38,7 @@ const foodAndDrinkAuthor = {
       date: '2 months ago',
       duration: '3:40',
       imgSrc: './images/food4.png',
-      link: '/',
+      link: '/player',
     },
     {
       title: 'Baby Monitor Technology',
@@ -47,7 +47,7 @@ const foodAndDrinkAuthor = {
       date: '7 days ago',
       duration: '1:56',
       imgSrc: './images/food5.png',
-      link: '/',
+      link: '/player',
     },
     {
       title: 'Asteroids',
@@ -56,7 +56,7 @@ const foodAndDrinkAuthor = {
       date: '4 months ago',
       duration: '6:12',
       imgSrc: './images/food6.png',
-      link: '/',
+      link: '/player',
     },
   ],
 }

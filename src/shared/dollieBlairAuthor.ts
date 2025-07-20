@@ -1,7 +1,7 @@
 const dollieBlairAuthor = {
   name: 'Dollie Blair',
   avatar: './avatars/user2.png',
-  link: '/channel/dollie-blair',
+  link: '/channel',
   subscribers: '2.3m',
   feed: [
     {
@@ -11,7 +11,7 @@ const dollieBlairAuthor = {
       date: '3 days ago',
       duration: '4:15',
       imgSrc: './images/cover1.png',
-      link: '/',
+      link: '/player',
     },
     {
       title: 'Selecting The Right Hotel',
@@ -20,7 +20,7 @@ const dollieBlairAuthor = {
       date: '1 month ago',
       duration: '8:00',
       imgSrc: './images/cover2.png',
-      link: '/',
+      link: '/player',
     },
     {
       title: 'Asteroids',
@@ -29,7 +29,7 @@ const dollieBlairAuthor = {
       date: '12 days ago',
       duration: '5:32',
       imgSrc: './images/cover3.png',
-      link: '/',
+      link: '/player',
     },
     {
       title: 'Telescopes 101',
@@ -38,7 +38,7 @@ const dollieBlairAuthor = {
       date: '6 months ago',
       duration: '6:40',
       imgSrc: './images/cover4.png',
-      link: '/',
+      link: '/player',
     },
     {
       title: 'Medical Care Is Just',
@@ -47,7 +47,7 @@ const dollieBlairAuthor = {
       date: '2 days ago',
       duration: '1:45',
       imgSrc: './images/cover5.png',
-      link: '/',
+      link: '/player',
     },
     {
       title: 'Moon Gazing',
@@ -56,7 +56,7 @@ const dollieBlairAuthor = {
       date: '4 months ago',
       duration: '2:12',
       imgSrc: './images/cover6.png',
-      link: '/',
+      link: '/player',
     },
   ],
 }
