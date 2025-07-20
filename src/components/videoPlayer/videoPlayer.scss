@@ -1,0 +1,19 @@
+@import '../../styles/media.scss';
+
+.videoPlayer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .videoFrame {
+    width: 100%;
+    aspect-ratio: 1363/701;
+    border: none;
+    border-radius: 16px;
+    @media (max-width: $breakpoint-mobile) {
+      border-radius: 0;
+      aspect-ratio: 320/180;
+    }
+  }
+}
