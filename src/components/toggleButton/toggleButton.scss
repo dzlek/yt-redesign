@@ -1,3 +1,5 @@
+@import '../../styles/media.scss';
+
 .toggleBtn {
   all: unset;
   width: 44px;
@@ -7,15 +9,24 @@
   position: relative;
   transition: background-color 0.2s;
 
+  @media (max-width: $breakpoint-mobile) {
+    width: 30px;
+    height: 19px;
+  }
+
   .circle {
     display: block;
     width: 24px;
     height: 24px;
     background-color: grey;
-
     border-radius: 50%;
     transition: transform 0.2s;
     transform: translateX(2px);
+
+    @media (max-width: $breakpoint-mobile) {
+      width: 16px;
+      height: 16px;
+    }
   }
 }
 
