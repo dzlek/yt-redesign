@@ -1,35 +1,164 @@
-.videoPlayerWrapper {
+@import '../../styles/media.scss';
+
+.videoPlayerPageWrapper {
+  display: flex;
   width: 100%;
-  margin-left: 35px;
-  padding-right: 70px;
+  padding: 0 70px 0 80px;
+  gap: 40px;
 
   .mainContent {
     display: flex;
-    gap: 20px;
-    margin-top: 20px;
+    flex-direction: column;
+    flex: 1;
 
     .videoPlayer {
-      flex: 2;
       display: flex;
-      flex-direction: column;
-      gap: 30px;
-
-      iframe {
-        border-radius: 14px;
-        width: 100%;
-        height: 500px;
-      }
     }
 
-    .sidebarRecommendedWrapper {
-      flex: 1;
-      padding-left: 30px;
+    .videoInfo {
+      .videoHeader {
+        border-bottom: 1px solid rgba(216, 216, 216, 0.5);
+        padding-bottom: 17px;
+
+        .title {
+          margin-top: 32px;
+        }
+
+        .videoSubTitle {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 18px;
+
+          .subtitle {
+            font-size: 20px;
+          }
+
+          .subtitleInteractionsButtons {
+            display: flex;
+            gap: 10px;
+
+            .socialBtn {
+              background-color: var(--toggle-background);
+              color: var(--icon-color-secondary);
+              border: none;
+              border-radius: 9999px;
+              padding: 7px 20px 10px;
+              font-size: 16px;
+              cursor: pointer;
+
+              &:hover {
+                background-color: darkgrey;
+              }
+
+              svg {
+                margin-right: 6px;
+              }
+            }
+
+            .moreBtn {
+              padding: 6px 0 10px 30px;
+              background: transparent;
+              border: none;
+              cursor: pointer;
+
+              &:hover {
+                background-color: darkgrey;
+              }
+            }
+          }
+        }
+      }
+
+      .videoDescriptionAndSubscribe {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 34px;
+
+        .videoDescription {
+          max-width: 912px;
+
+          .videoChannel {
+            display: flex;
+            gap: 13px;
+            margin-left: -5px;
+
+            .avatarRoot {
+              display: inline-block;
+
+              .avatar,
+              .avatarFallback {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+              }
+
+              .avatar {
+                object-fit: cover;
+              }
+
+              .avatarFallback {
+                background-color: #ccc;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
+                color: white;
+              }
+            }
+
+            .videoAuthorAndDescription {
+              display: flex;
+              flex-direction: column;
+
+              .authorSubtitle {
+                padding: 5px 0 8px;
+              }
+
+              .published {
+                font-size: 13px;
+              }
+
+              .description {
+                margin: 10px 0 13px;
+
+                &.ellipsis-multiline {
+                  display: -webkit-box;
+                  -webkit-line-clamp: 4;
+                  -webkit-box-orient: vertical;
+                  overflow: hidden;
+                }
+              }
+
+              .showMore {
+                font-size: 20px;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+
+        .subscribeButton {
+          background-color: red;
+          color: white;
+          border: 1px solid red;
+          border-radius: 20px;
+          padding: 10px 19.5px 8px;
+          font-size: 16px;
+          cursor: pointer;
+          white-space: nowrap;
+
+          &:hover {
+            background-color: darkred;
+          }
+        }
+      }
     }
   }
 
-  .recommendedFeedWrapper {
-    margin-top: 67px;
-    margin-right: -70px;
-    margin-left: -25px;
+  .NextVideoFeedWrapper {
+    width: 367px;
+    margin-top: 12px;
   }
 }
