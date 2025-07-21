@@ -1,0 +1,126 @@
+@import '../../styles/media.scss';
+
+.nextVideoFeedWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+  @media (max-width: $breakpoint-mobile) {
+    gap: 12px;
+  }
+
+  .videoPreviewHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    @media (max-width: $breakpoint-mobile) {
+      margin-right: 5px;
+    }
+
+    .next {
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 20px;
+      }
+    }
+
+    .toggle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 11px;
+      @media (max-width: $breakpoint-mobile) {
+        gap: 3px;
+      }
+
+      span {
+        display: flex;
+        font-family: Mulish;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  .nextVideoFeed {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @media (max-width: $breakpoint-mobile) {
+      gap: 39px;
+    }
+
+    > :first-child {
+      margin-bottom: -7px;
+    }
+
+    .nextVideoCardWrapper {
+      width: 100%;
+      height: 293px;
+      @media (max-width: $breakpoint-mobile) {
+        height: 200px;
+      }
+    }
+    .videoPreviewInfo {
+      height: 80px;
+      width: 100%;
+      @media (max-width: $breakpoint-mobile) {
+        height: 48px;
+      }
+
+      .videoPreviewTitle {
+        padding: 20px 0 14px 0;
+        max-width: 100%;
+
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 16px;
+          padding: 8px 0 0 0;
+        }
+
+        &.ellipsis {
+          display: block;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+      .subtitleCard {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+
+        .viewsSubtitle {
+          display: flex;
+          flex-shrink: 0;
+          white-space: nowrap;
+          font-size: 18px;
+
+          @media (max-width: $breakpoint-mobile) {
+            font-size: 13px;
+          }
+        }
+
+        .authorSubtitle {
+          flex: 1;
+          min-width: 0;
+          text-align: right;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-size: 18px;
+          @media (max-width: $breakpoint-mobile) {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
