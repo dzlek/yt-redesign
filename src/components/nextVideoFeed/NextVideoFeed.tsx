@@ -31,14 +31,13 @@ const NextVideoFeed = ({ author }: NextVideoFeedProps) => {
         <h1 className="h1 next">Next</h1>
         <div className="toggle">
           <span>AUTOPLAY</span>
-          <span>
-            <ToggleButton
-              checked={isOn}
-              onCheckedChange={(isOn) => {
-                setIsOn(isOn)
-              }}
-            />
-          </span>
+
+          <ToggleButton
+            checked={isOn}
+            onCheckedChange={(isOn) => {
+              setIsOn(isOn)
+            }}
+          />
         </div>
       </div>
       <div className="nextVideoFeed">
