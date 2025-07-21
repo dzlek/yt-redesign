@@ -5,7 +5,7 @@ import { NotificationsIcon } from '../../icons'
 import ChannelTabs from '../../components/channelTabs/ChannelTabs'
 import VideoBlock from '../../components/videoBlock/VideoBlock'
 import channelPageData from '../../shared/channelPageData'
-import SidebarRecommended from '../../components/SidebarRecommended/SidebarRecommended'
+import SidebarRecommended from '../../components/sidebarRecommended/SidebarRecommended'
 import { recommendedSadebarChannels } from '../../shared/recommendedSadebarChannels'
 import RecommendedFeed from '../../components/recommendedFeed/recommendedFeed'
 import AuthorFeedMobile from '../../components/authorFeedMobile/AuthorFeedMobile'
@@ -23,15 +23,15 @@ const ChannelPage = () => {
         <div className="authorHeader">
           <Avatar.Root>
             <Avatar.Image src={user.avatar} alt={user.name} className="avatar" />
-            <Avatar.Fallback>{user.name[0]}</Avatar.Fallback>
+            <Avatar.Fallback className="avatarFallback">{user.name[0]}</Avatar.Fallback>
           </Avatar.Root>
           <div className="authorInfo">
             <h2 className="authorName h2">{user.name}</h2>
-            <div className="paragraph">{user.subscribers} subscribed </div>
+            <div className="paragraph subscribed">{user.subscribers} subscribed </div>
           </div>
         </div>
         <div className="channelInteractions">
-          <NotificationsIcon />
+          <NotificationsIcon className="hideOnMobile" />
           <button className="subscribeButton">Subscribe {user.subscribers}</button>
         </div>
       </div>
@@ -60,7 +60,7 @@ const ChannelPage = () => {
         />
       </div>
 
-      <div className="hideOnDesktop">
+      <div className="authorFeedContainer hideOnDesktop">
         <AuthorFeedMobile author={user} />
       </div>
     </div>
