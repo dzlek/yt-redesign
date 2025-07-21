@@ -7,13 +7,14 @@ type VideoCardProps = {
   title: string
   author: string
   views: string
-  date: string
+  date?: string
   duration: string
   imgSrc: string
   link: string
+  variant?: 'large' | 'small'
 }
 
-const VideoCard: React.FC<VideoCardProps> = ({
+const VideoCard = ({
   title,
   author,
   views,
@@ -21,18 +22,19 @@ const VideoCard: React.FC<VideoCardProps> = ({
   duration,
   imgSrc,
   link,
-}) => {
+  variant = 'small',
+}: VideoCardProps) => {
   return (
-    <Link to={link} className="videoCardWrapper">
+    <Link to={link} className={`videoCardWrapper ${variant}`}>
       <VideoPreview title={title} duration={duration} imgSrc={imgSrc} />
 
-      <div className="info">
-        <h4 className="title ellipsis">{title}</h4>
-        <p className="subtitleCard ">
+      <div className={`info ${variant}`}>
+        <h4 className={`cardTitle ellipsis ${variant}`}>{title}</h4>
+        <p className={`subtitleCard ${variant}`}>
           <span className="viewsSubtitle subtitle">
             <span className="subtitle">{views}</span>
-            <span className="subtitle">&bull;</span>
-            <span className="subtitle">{date}</span>
+            {date && <span className="subtitle">&bull;</span>}
+            {date && <span className="subtitle">{date}</span>}
           </span>
           <span className="authorSubtitle ellipsis subtitle">{author}</span>
         </p>
