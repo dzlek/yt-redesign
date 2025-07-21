@@ -1,3 +1,5 @@
+@import '../../styles/media.scss';
+
 .videoCardWrapper {
   display: flex;
   flex-direction: column;
@@ -5,11 +7,60 @@
   height: 100%;
   overflow: hidden;
 
+  &.large {
+    .info {
+      height: 108px;
+      @media (max-width: $breakpoint-mobile) {
+        height: 48px;
+      }
+
+      .cardTitle {
+        font-size: 26px;
+        margin-top: 14px;
+        margin-bottom: 13px;
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 16px;
+        }
+      }
+
+      .subtitleCard {
+        .viewsSubtitle,
+        .authorSubtitle {
+          font-size: 18px;
+          @media (max-width: $breakpoint-mobile) {
+            font-size: 13px;
+          }
+        }
+        span {
+          font-size: 18px;
+          @media (max-width: $breakpoint-mobile) {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+
+  &.small {
+    .info {
+      height: 50px;
+      .cardTitle {
+        font-size: 16px;
+      }
+
+      .subtitleCard {
+        .viewsSubtitle,
+        .authorSubtitle {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
   .info {
-    height: 50px;
     width: 100%;
 
-    .title {
+    .cardTitle {
       margin: 5px 0 -4px 0;
       max-width: 100%;
 
@@ -20,6 +71,7 @@
         text-overflow: ellipsis;
       }
     }
+
     .subtitleCard {
       display: flex;
       justify-content: space-between;
