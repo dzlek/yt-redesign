@@ -33,8 +33,12 @@ const VideoCard = ({
         <p className={`subtitleCard ${variant}`}>
           <span className="viewsSubtitle subtitle">
             <span className="subtitle">{views}</span>
-            {date && <span className="subtitle">&bull;</span>}
-            {date && <span className="subtitle">{date}</span>}
+            {date && (
+              <>
+                <span className="subtitle">&bull;</span>
+                <span className="subtitle">{date}</span>
+              </>
+            )}
           </span>
           <span className="authorSubtitle ellipsis subtitle">{author}</span>
         </p>
