@@ -1,15 +1,26 @@
+@import '../../styles/media.scss';
+
 .tabsHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: $breakpoint-mobile) {
+    padding: 10px 17px 3px 17px;
+  }
 }
 
 .tabsList {
   display: flex;
   gap: 62px;
 
+  @media (max-width: $breakpoint-mobile) {
+    gap: 33px;
+  }
+
   .tabTrigger {
     position: relative;
+    display: flex;
+    align-items: center;
     padding: 0 4px;
     font-size: 18px;
     color: var(--text-secondary);
@@ -26,6 +37,10 @@
       }
     }
 
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 14px;
+    }
+
     .tabUnderline {
       content: '';
       position: absolute;
@@ -38,10 +53,13 @@
       transform: scaleX(0);
       transform-origin: center;
       transition: transform 0.2s ease-in-out;
+      @media (max-width: $breakpoint-mobile) {
+        bottom: -5px;
+      }
     }
   }
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1400px) and (min-width: $breakpoint-mobile) {
     gap: 30px;
   }
 }

@@ -7,8 +7,8 @@ const ChannelTabs = () => {
     <Tabs.Root defaultValue="home">
       <div className="tabsHeader">
         <Tabs.List className="tabsList">
-          {tabItems.map(({ value, label, icon }) => (
-            <Tabs.Trigger key={value} value={value} className="tabTrigger">
+          {tabItems.map(({ value, label, icon, className }) => (
+            <Tabs.Trigger key={value} value={value} className={`tabTrigger ${className || ''}`}>
               {icon} {label}
               <span className="tabUnderline" />
             </Tabs.Trigger>
