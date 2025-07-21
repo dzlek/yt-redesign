@@ -1,0 +1,224 @@
+@import '../../styles/media.scss';
+
+.videoPlayerPageWrapper {
+  display: flex;
+  width: 100%;
+  padding: 0 70px 0 80px;
+  gap: 40px;
+
+  @media (max-width: $breakpoint-mobile) {
+    flex-direction: column;
+    padding: 0;
+    gap: 10px;
+  }
+
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    .videoPlayer {
+      display: flex;
+      @media (max-width: $breakpoint-mobile) {
+        margin-top: 7px;
+      }
+    }
+
+    .videoInfo {
+      .videoHeader {
+        border-bottom: 1px solid rgba(216, 216, 216, 0.5);
+        padding-bottom: 17px;
+        @media (max-width: $breakpoint-mobile) {
+          padding-bottom: 29px;
+        }
+
+        .title {
+          margin-top: 32px;
+          @media (max-width: $breakpoint-mobile) {
+            font-size: 20px;
+            max-width: 210px;
+            margin: 14px 0 0 16px;
+            line-height: 24px;
+          }
+        }
+
+        .videoSubTitle {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 18px;
+          @media (max-width: $breakpoint-mobile) {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 2px;
+            margin-left: 16px;
+          }
+          .subtitle {
+            font-size: 20px;
+            @media (max-width: $breakpoint-mobile) {
+              font-size: 12px;
+            }
+          }
+
+          .subtitleInteractionsButtons {
+            display: flex;
+            gap: 10px;
+            @media (max-width: $breakpoint-mobile) {
+              margin-top: 18px;
+              margin-left: -2px;
+              overflow: hidden;
+            }
+
+            .socialBtn {
+              background-color: var(--toggle-background);
+              color: var(--icon-color-secondary);
+              border: none;
+              border-radius: 9999px;
+              padding: 7px 20px 10px;
+              font-size: 16px;
+              cursor: pointer;
+              white-space: nowrap;
+
+              &:hover {
+                background-color: darkgrey;
+              }
+
+              svg {
+                margin-right: 6px;
+              }
+            }
+
+            .moreBtn {
+              padding: 6px 0 10px 30px;
+              background: transparent;
+              border: none;
+              cursor: pointer;
+
+              &:hover {
+                color: darkgrey;
+              }
+            }
+          }
+        }
+      }
+
+      .videoDescriptionAndSubscribe {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 34px;
+
+        @media (max-width: $breakpoint-mobile) {
+          margin: 20px 16px 0 16px;
+          padding-bottom: 11px;
+          border-bottom: 1px solid rgba(216, 216, 216, 0.5);
+        }
+
+        .videoDescription {
+          max-width: 912px;
+
+          .videoChannel {
+            display: flex;
+            gap: 13px;
+            margin-left: -5px;
+            @media (max-width: $breakpoint-mobile) {
+              margin-left: 0;
+              gap: 10px;
+            }
+
+            .avatarRoot {
+              display: inline-block;
+
+              .avatar,
+              .avatarFallback {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                @media (max-width: $breakpoint-mobile) {
+                  width: 50px;
+                  height: 50px;
+                }
+              }
+
+              .avatar {
+                object-fit: cover;
+              }
+
+              .avatarFallback {
+                background-color: #ccc;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
+                color: white;
+              }
+            }
+
+            .videoAuthorAndDescription {
+              display: flex;
+              flex-direction: column;
+
+              .authorSubtitle {
+                padding: 5px 0 8px;
+                @media (max-width: $breakpoint-mobile) {
+                  font-size: 16px !important;
+                  padding-bottom: 0px;
+                }
+              }
+
+              .published {
+                font-size: 13px;
+              }
+
+              .description {
+                margin: 10px 0 13px;
+
+                &.ellipsis-multiline {
+                  display: -webkit-box;
+                  -webkit-line-clamp: 4;
+                  -webkit-box-orient: vertical;
+                  overflow: hidden;
+                }
+              }
+
+              .showMore {
+                font-size: 20px;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+
+        .subscribeLnk {
+          color: red;
+          margin-top: 14px;
+          margin-right: 5px;
+        }
+
+        .subscribeButton {
+          background-color: red;
+          color: white;
+          border: 1px solid red;
+          border-radius: 20px;
+          padding: 10px 19.5px 8px;
+          font-size: 16px;
+          cursor: pointer;
+          white-space: nowrap;
+
+          &:hover {
+            background-color: darkred;
+          }
+        }
+      }
+    }
+  }
+
+  .NextVideoFeedWrapper {
+    width: 367px;
+    margin-top: 12px;
+    @media (max-width: $breakpoint-mobile) {
+      width: 100%;
+      padding: 0 16px;
+    }
+  }
+}
