@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/yt-redesign/static/css/main.f286dd78.css",
+    "main.js": "/yt-redesign/static/js/main.39cb4fff.js",
+    "index.html": "/yt-redesign/index.html",
+    "main.f286dd78.css.map": "/yt-redesign/static/css/main.f286dd78.css.map",
+    "main.39cb4fff.js.map": "/yt-redesign/static/js/main.39cb4fff.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f286dd78.css",
+    "static/js/main.39cb4fff.js"
+  ]
+}
