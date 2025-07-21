@@ -8,7 +8,7 @@ import { DisLikeIcon, LikeIcon, ShareIcon } from '../../icons'
 import { MoreIcon } from '../../icons/MoreIcon'
 import * as Avatar from '@radix-ui/react-avatar'
 import { Link } from 'react-router-dom'
-import foodAndDrinkVideo from '../../shared/Test'
+import foodAndDrinkVideo from '../../shared/FoodAndDrinkVideo'
 
 const VideoPlayerPage = () => {
   const video = foodAndDrinkVideo
