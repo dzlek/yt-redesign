@@ -12,7 +12,7 @@ type HeaderProps = {
 
 const Header = ({ onBurgerClick }: HeaderProps) => {
   const { lightTheme } = useContext(ThemeContext)
-  const logo = lightTheme ? '/logo/LogoLight.svg' : '/logo/LogoDark.svg'
+  const logo = lightTheme ? './logo/LogoLight.svg' : './logo/LogoDark.svg'
 
   return (
     <div className="headerWrapper">
@@ -33,7 +33,7 @@ const Header = ({ onBurgerClick }: HeaderProps) => {
       </div>
       <div className="hideOnDesktop">
         <Avatar.Root>
-          <Avatar.Image src={'../avatars/user0.png'} alt={'User avatar'} className="userAvatar" />
+          <Avatar.Image src={'./avatars/user0.png'} alt={'User avatar'} className="userAvatar" />
           <Avatar.Fallback>{'user'}</Avatar.Fallback>
         </Avatar.Root>
       </div>
