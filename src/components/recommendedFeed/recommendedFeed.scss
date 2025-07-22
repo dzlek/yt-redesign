@@ -1,0 +1,29 @@
+.sectionRecommended {
+  position: relative;
+  margin: 25px 0 25px 25px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 18px;
+
+  .sectionHeader {
+    position: absolute;
+    top: -2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    padding-right: 255px;
+  }
+
+  .sectionTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .carouselWrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+}

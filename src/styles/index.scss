@@ -2,6 +2,7 @@
 @use './themes' as *;
 @use 'fonts' as *;
 @use './typography' as *;
+@import './media.scss';
 
 body {
   background-color: var(--background-color);
@@ -17,7 +18,11 @@ textarea,
 button,
 p,
 span,
-label,
+label {
+  @include typography($font-size-m, $font-weight-regular, $line-height-m);
+  color: var(--text-primary);
+}
+
 a {
   @include typography($font-size-m, $font-weight-regular, $line-height-l);
   color: var(--text-primary);
@@ -38,9 +43,9 @@ h5 {
 }
 
 .hideOnDesktop {
-  display: none;
+  display: none !important;
 
-  @media (min-width: $breakpoint-mobile) {
+  @media (max-width: $breakpoint-mobile) {
     display: block;
   }
 }

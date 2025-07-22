@@ -1,0 +1,43 @@
+import Carousel from '../carousel/Carousel'
+import VideoCard from '../videoCard/VideoCard'
+
+import './recommendedFeed.scss'
+
+interface FeedItem {
+  title: string
+  author: string
+  views: string
+  date: string
+  duration: string
+  imgSrc: string
+  link: string
+}
+
+interface RecommendedFeedProps {
+  feed: FeedItem[]
+  slideWidth: number
+  slideHeight: number
+  title: string
+}
+
+const RecommendedFeed = ({ feed, slideWidth, slideHeight, title }: RecommendedFeedProps) => {
+  return (
+    <section className="sectionRecommended">
+      <div className="sectionHeader">
+        <div className="sectionTitle">
+          <h2 className="h2">{title}</h2>
+        </div>
+      </div>
+
+      <div className="carouselWrapper">
+        <Carousel slideWidth={slideWidth} slideHeight={slideHeight}>
+          {feed.map((card, i) => (
+            <VideoCard key={i} {...card} />
+          ))}
+        </Carousel>
+      </div>
+    </section>
+  )
+}
+
+export default RecommendedFeed

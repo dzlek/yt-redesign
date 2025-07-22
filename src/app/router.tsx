@@ -1,8 +1,8 @@
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
-import HomePage from '../pages/HomePage'
-import ChannelPage from '../pages/ChannelPage'
-import VideoPlayerPage from '../pages/VideoPlayerPage'
+import HomePage from '../pages/homePage/HomePage'
+import ChannelPage from '../pages/channelPage/ChannelPage'
+import VideoPlayerPage from '../pages/videoPlayerPage/VideoPlayerPage'
 
 const AppRouter = () => {
   return (

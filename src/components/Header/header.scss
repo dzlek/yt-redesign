@@ -1,23 +1,80 @@
+@import '../../styles/media.scss';
+
 .headerWrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 70px 50px 32px;
+  padding: 20px 70px 30px 32px;
+
+  @media (max-width: $breakpoint-mobile) {
+    padding: 7px 16px 3px 16px;
+  }
 
   .headerItems {
     display: flex;
-    flex-direction: row;
     align-items: center;
     width: 100%;
   }
 
   .logo {
     display: flex;
-    padding: 0 59px 0 28px;
     align-items: center;
+    padding: 0 59px 0 28px;
+
+    @media (max-width: $breakpoint-mobile) {
+      padding: 0;
+    }
+  }
+
+  .inputWrapper {
+    width: 100%;
+    max-width: 830px;
+  }
+
+  .userAvatar {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 1;
+
+    @media (max-width: $breakpoint-mobile) {
+      width: 30px;
+      height: 30px;
+      padding-top: 4px;
+    }
   }
 
   .icon {
     color: var(--icon-color-secondary);
+  }
+
+  .hideOnMobile {
+    @media (max-width: $breakpoint-mobile) {
+      display: none;
+    }
+  }
+
+  .hideOnDesktop {
+    @media (min-width: $breakpoint-mobile) {
+      display: none;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .searchIconMobile {
+    display: none;
+
+    @media (max-width: $breakpoint-mobile) {
+      display: block;
+      width: 28px;
+      height: 28px;
+      margin-right: 23px;
+    }
   }
 }

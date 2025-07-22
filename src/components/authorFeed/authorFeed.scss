@@ -1,0 +1,67 @@
+.sectionAuthorFeed {
+  position: relative;
+  margin: 25px 0 25px 25px;
+  display: flex;
+  flex-direction: column;
+
+  .sectionHeader {
+    position: absolute;
+    top: -23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    padding-right: 255px;
+
+    .subscribeButton {
+      position: absolute;
+      right: 255px;
+      top: 15px;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 5.5px 19.5px 4.5px 20.5px;
+      font-size: 16px;
+      cursor: pointer;
+      height: fit-content;
+
+      &:hover {
+        background-color: darkred;
+      }
+    }
+  }
+
+  .sectionTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+    .avatarRoot {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .titleLine {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      gap: 19px;
+      margin-top: 5px;
+    }
+  }
+
+  .carouselWrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+}

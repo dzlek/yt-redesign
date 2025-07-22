@@ -1,3 +1,5 @@
+@import './styles/media.scss';
+
 .app {
   display: flex;
   flex-direction: column;
@@ -6,4 +8,22 @@
 .app-container {
   display: flex;
   flex-direction: row;
+}
+
+.sidebar-container {
+  @media (min-width: #{ $breakpoint-mobile + 1px }) {
+    width: 219px;
+  }
+  transition: all 0.3s ease;
+
+  &.closed {
+    width: 0;
+    overflow: hidden;
+  }
+}
+
+main {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
 }
