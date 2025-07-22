@@ -9,6 +9,7 @@ import SidebarRecommended from '../../components/sidebarRecommended/SidebarRecom
 import { recommendedSadebarChannels } from '../../shared/recommendedSadebarChannels'
 import RecommendedFeed from '../../components/recommendedFeed/RecommendedFeed'
 import AuthorFeedMobile from '../../components/authorFeedMobile/AuthorFeedMobile'
+import { Link } from 'react-router-dom'
 
 const ChannelPage = () => {
   const user = margaretPhelpsAuthor
@@ -21,17 +22,19 @@ const ChannelPage = () => {
 
       <div className="channelInfo">
         <div className="authorHeader">
-          <Avatar.Root>
-            <Avatar.Image src={user.avatar} alt={user.name} className="avatar" />
-            <Avatar.Fallback className="avatarFallback">{user.name[0]}</Avatar.Fallback>
-          </Avatar.Root>
+          <Link to={'/channel'}>
+            <Avatar.Root>
+              <Avatar.Image src={user.avatar} alt={user.name} className="avatar" />
+              <Avatar.Fallback className="avatarFallback">{user.name[0]}</Avatar.Fallback>
+            </Avatar.Root>
+          </Link>
           <div className="authorInfo">
             <h2 className="authorName h2">{user.name}</h2>
             <div className="paragraph subscribed">{user.subscribers} subscribed </div>
           </div>
         </div>
         <div className="channelInteractions">
-          <NotificationsIcon className="hideOnMobile" />
+          <NotificationsIcon className="hideOnMobile icon" />
           <button className="subscribeButton">Subscribe {user.subscribers}</button>
         </div>
       </div>
