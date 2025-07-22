@@ -45,7 +45,9 @@ const AuthorFeed = ({
             </Avatar.Root>
           </Link>
           <div className="titleLine">
-            <h2 className="h2">{author.name}</h2>
+            <Link to={author.link}>
+              <h2 className="h2">{author.name}</h2>
+            </Link>
             {!hasSubscription && <div className="paragraph">Recommended channel for you</div>}
           </div>
         </div>

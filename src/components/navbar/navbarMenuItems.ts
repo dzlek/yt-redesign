@@ -23,7 +23,7 @@ export const menuItems: MenuItem[] = [
   { Icon: TrendingIcon, text: 'Trending', path: '/' },
   { Icon: SubscriptionsIcon, text: 'Subscriptions', path: '/' },
   { Icon: LibraryIcon, text: 'Library', path: '/' },
-  { Icon: HistoryIcon, text: 'History', path: '/history' },
+  { Icon: HistoryIcon, text: 'History', path: '/' },
   { Icon: WatchLaterIcon, text: 'Watch later', path: '/' },
   { Icon: FavouritesIcon, text: 'Favourites', path: '/' },
   { Icon: LikedVideosIcon, text: 'Liked videos', path: '/' },
