@@ -1,3 +1,5 @@
+@import '../../styles/media.scss';
+
 .carouselContainer {
   display: flex;
   flex-direction: column;
@@ -17,7 +19,10 @@
     align-items: center;
     gap: 10px;
     margin-right: 149px;
-
+    min-width: 500px;
+    @media (max-width:#{ $breakpoint-mobile + 432px }) {
+      margin-right: 50px;
+    }
     .arrowLeft,
     .arrowRight {
       width: 28px;

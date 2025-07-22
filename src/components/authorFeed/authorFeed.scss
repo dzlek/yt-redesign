@@ -1,3 +1,5 @@
+@import '../../styles/media.scss';
+
 .sectionAuthorFeed {
   position: relative;
   margin: 25px 0 25px 25px;
@@ -13,10 +15,11 @@
     width: 100%;
     padding-right: 255px;
 
+    @media (max-width:#{ $breakpoint-mobile + 432px }) {
+      padding-right: 155px;
+    }
+
     .subscribeButton {
-      position: absolute;
-      right: 255px;
-      top: 15px;
       background-color: red;
       color: white;
       border: none;
@@ -25,6 +28,7 @@
       font-size: 16px;
       cursor: pointer;
       height: fit-content;
+      white-space: nowrap;
 
       &:hover {
         background-color: darkred;
@@ -57,6 +61,12 @@
       align-items: baseline;
       gap: 19px;
       margin-top: 5px;
+
+      .paragraph {
+        @media (max-width:#{ $breakpoint-mobile + 432px }) {
+          display: none;
+        }
+      }
     }
   }
 
