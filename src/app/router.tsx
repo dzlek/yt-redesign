@@ -7,7 +7,7 @@ import VideoPlayerPage from '../pages/videoPlayerPage/VideoPlayerPage'
 const AppRouter = () => {
   return (
     <Routes>
-      <Route path="" element={<HomePage />} />
+      <Route path="/" element={<HomePage />} />
       <Route path="/channel" element={<ChannelPage />} />
       <Route path="/player" element={<VideoPlayerPage />} />
       <Route path="*" element={<Navigate to={''} replace />} />
