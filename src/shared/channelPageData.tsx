@@ -5,7 +5,7 @@ const channelPageData = {
   views: '11k views',
   date: '6 months ago',
   duration: '7:36',
-  imgSrc: '../images/channel1.png',
+  imgSrc: './images/channel1.png',
   link: '/',
 }
 
