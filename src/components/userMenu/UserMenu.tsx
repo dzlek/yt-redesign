@@ -1,3 +1,4 @@
+import * as Avatar from '@radix-ui/react-avatar'
 import { CameraIcon, MenuIcon, NotificationsIcon } from '../../icons'
 import './userMenu.scss'
 
@@ -12,7 +13,10 @@ const UserMenu = () => {
           <span>3</span>
         </div>
       </div>
-      <img src="../avatars/user1.png" alt="User avatar" />
+      <Avatar.Root>
+        <Avatar.Image src={'./avatars/user0.png'} alt={'User avatar'} className="userAvatar" />
+        <Avatar.Fallback>{'user'}</Avatar.Fallback>
+      </Avatar.Root>
     </div>
   )
 }

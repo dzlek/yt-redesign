@@ -1,3 +1,5 @@
+@import './styles/media.scss';
+
 .app {
   display: flex;
   flex-direction: column;
@@ -9,7 +11,9 @@
 }
 
 .sidebar-container {
-  width: 219px;
+  @media (min-width: #{ $breakpoint-mobile + 1px }) {
+    width: 219px;
+  }
   transition: all 0.3s ease;
 
   &.closed {

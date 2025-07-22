@@ -3,6 +3,14 @@
   justify-content: center;
   align-items: center;
   gap: 49px;
+  .userAvatar {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 1;
+  }
 }
 
 .userMenuItems {
