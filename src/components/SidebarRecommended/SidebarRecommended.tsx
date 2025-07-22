@@ -14,7 +14,7 @@ type SidebarRecommendedProps = {
 const SidebarRecommended = ({ items }: SidebarRecommendedProps) => {
   return (
     <div className="recommendedWrapper">
-      <h3 className="title">Recommended channel</h3>
+      <p className="title">Recommended channel</p>
       <ul className="recommendedList">
         {items.map((channel) => (
           <Link to={'/'} key={channel.name}>
