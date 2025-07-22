@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/yt-redesign/static/css/main.74635e66.css",
-    "main.js": "/yt-redesign/static/js/main.02850bf6.js",
+    "main.js": "/yt-redesign/static/js/main.3daf477a.js",
     "index.html": "/yt-redesign/index.html",
     "main.74635e66.css.map": "/yt-redesign/static/css/main.74635e66.css.map",
-    "main.02850bf6.js.map": "/yt-redesign/static/js/main.02850bf6.js.map"
+    "main.3daf477a.js.map": "/yt-redesign/static/js/main.3daf477a.js.map"
   },
   "entrypoints": [
     "static/css/main.74635e66.css",
-    "static/js/main.02850bf6.js"
+    "static/js/main.3daf477a.js"
   ]
 }
