@@ -16,7 +16,7 @@ const ChannelPage = () => {
   return (
     <div className="channelPageWrapper">
       <div className="channelBanner">
-        <img src="../images/channel-back.png" alt="Channel Banner" />
+        <img src="./images/channel-back.png" alt="Channel Banner" />
       </div>
 
       <div className="channelInfo">
