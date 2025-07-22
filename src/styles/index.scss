@@ -30,3 +30,17 @@ h4,
 h5 {
   color: var(--text-secondary);
 }
+
+.hideOnMobile {
+  @media (max-width: $breakpoint-mobile) {
+    display: none !important;
+  }
+}
+
+.hideOnDesktop {
+  display: none;
+
+  @media (min-width: $breakpoint-mobile) {
+    display: block;
+  }
+}
