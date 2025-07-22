@@ -62,4 +62,12 @@
   @media (max-width: 1400px) and (min-width: $breakpoint-mobile) {
     gap: 30px;
   }
+
+  .hideOnDesktop {
+    display: none;
+
+    @media (max-width: $breakpoint-mobile) {
+      display: block;
+    }
+  }
 }
