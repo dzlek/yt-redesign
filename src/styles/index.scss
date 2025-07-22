@@ -43,7 +43,7 @@ h5 {
 }
 
 .hideOnDesktop {
-  display: none;
+  display: none !important;
 
   @media (max-width: $breakpoint-mobile) {
     display: block;
