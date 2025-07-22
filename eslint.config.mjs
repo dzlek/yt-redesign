@@ -32,6 +32,7 @@ export default [
         },
       },
     },
+
     plugins: {
       prettier: pluginPrettier,
     },
@@ -42,5 +43,6 @@ export default [
       'prettier/prettier': 'error',
     },
   },
+  { ignores: ['dist', 'tmp', 'build'] },
   configPrettier,
 ]
