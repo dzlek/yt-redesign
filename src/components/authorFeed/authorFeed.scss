@@ -15,7 +15,7 @@
     width: 100%;
     padding-right: 255px;
 
-    @media (max-width:#{ $breakpoint-mobile + 432px }) {
+    @media (max-width: $breakpoint-carousel-mobile) {
       padding-right: 155px;
     }
 
@@ -64,7 +64,7 @@
       margin-top: 5px;
 
       .paragraph {
-        @media (max-width:#{ $breakpoint-mobile + 432px }) {
+        @media (max-width: $breakpoint-carousel-mobile) {
           display: none;
         }
       }

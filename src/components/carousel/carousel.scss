@@ -20,7 +20,7 @@
     gap: 10px;
     margin-right: 149px;
     min-width: 500px;
-    @media (max-width:#{ $breakpoint-mobile + 432px }) {
+    @media (max-width: $breakpoint-carousel-mobile) {
       margin-right: 50px;
     }
     .arrowLeft,
