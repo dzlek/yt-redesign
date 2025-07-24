@@ -6,6 +6,11 @@
   padding: 0 70px 0 80px;
   gap: 40px;
 
+  @media (max-width: $breakpoint-desktop-small) and (min-width: $breakpoint-mobile) {
+    flex-direction: column;
+    padding: 0 16px;
+  }
+
   @media (max-width: $breakpoint-mobile) {
     flex-direction: column;
     padding: 0;
@@ -52,6 +57,7 @@
             align-items: flex-start;
             margin-top: 2px;
             margin-left: 16px;
+            width: 100%;
           }
           .subtitle {
             font-size: 20px;
@@ -66,7 +72,15 @@
             @media (max-width: $breakpoint-mobile) {
               margin-top: 18px;
               margin-left: -2px;
-              overflow: hidden;
+              padding-right: 5px;
+              overflow-x: auto;
+              -webkit-overflow-scrolling: touch;
+              scrollbar-width: none;
+              width: 100%;
+
+              &::-webkit-scrollbar {
+                display: none;
+              }
             }
 
             .socialBtn {
@@ -121,7 +135,7 @@
             display: flex;
             gap: 13px;
             margin-left: -5px;
-            @media (max-width: $breakpoint-mobile) {
+            @media (max-width: $breakpoint-desktop-small) {
               margin-left: 0;
               gap: 10px;
             }
@@ -216,7 +230,7 @@
   .NextVideoFeedWrapper {
     width: 367px;
     margin-top: 12px;
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: $breakpoint-desktop-small) {
       width: 100%;
       padding: 0 16px;
     }
