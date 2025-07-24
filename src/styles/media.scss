@@ -1,3 +1,5 @@
 $breakpoint-mobile: 768px;
 
-$breakpoint-carousel-mobile: $breakpoint-mobile + 432px;
+$breakpoint-carousel-mobile: $breakpoint-mobile + 432px; //1200px
+
+$breakpoint-desktop-small: $breakpoint-mobile + 632px; //1400px

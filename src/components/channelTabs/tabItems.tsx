@@ -5,7 +5,7 @@ export const tabItems = [
   { value: 'home', label: 'Home', className: '' },
   { value: 'videos', label: 'Videos' },
   { value: 'playlists', label: 'Playlists' },
-  { value: 'search', label: '', icon: <ChevronIcon />, className: 'hideOnDesktop' },
+  { value: 'chevron', label: '', icon: <ChevronIcon />, className: 'hideOnDesktop' },
   { value: 'channels', label: 'Channels', className: 'hideOnMobile' },
   { value: 'discussion', label: 'Discussion', className: 'hideOnMobile' },
   { value: 'about', label: 'About', className: 'hideOnMobile' },
