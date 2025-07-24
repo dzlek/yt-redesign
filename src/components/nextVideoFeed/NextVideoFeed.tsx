@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import ToggleButton from '../toggleButton/ToggleButton'
 import './nextVideoFeed.scss'
-import { Link } from 'react-router-dom'
 import VideoCard from '../videoCard/VideoCard'
 
 interface FeedItem {
@@ -42,11 +41,9 @@ const NextVideoFeed = ({ author }: NextVideoFeedProps) => {
       </div>
       <div className="nextVideoFeed">
         {author.feed.map((card, i) => (
-          <Link to={'/channel'} key={'card' + i}>
-            <div className="nextVideoCardWrapper">
-              <VideoCard variant="large" {...card} />
-            </div>
-          </Link>
+          <div className="nextVideoCardWrapper" key={'card' + i}>
+            <VideoCard variant="large" {...card} />
+          </div>
         ))}
       </div>
     </section>
