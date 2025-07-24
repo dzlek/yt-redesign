@@ -1,3 +1,5 @@
+@import '../../styles/media.scss';
+
 .videoBlockWrapper {
   display: flex;
   flex-direction: row;
@@ -10,6 +12,9 @@
     width: 540px;
     height: 250px;
     flex-shrink: 0;
+    @media (max-width: $breakpoint-carousel-mobile) {
+      width: 340px;
+    }
   }
 
   .videoBlockContent {

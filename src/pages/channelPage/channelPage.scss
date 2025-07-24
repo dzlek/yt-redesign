@@ -134,6 +134,9 @@
     .sidebarRecommendedWrapper {
       margin: 5px auto;
       padding-left: 110px;
+      @media (max-width: $breakpoint-desktop-small) {
+        display: none;
+      }
     }
   }
 
